@@ -1,2 +1,0 @@
-subcommand for cargo - auto add dependencies from main.rs
-	anything between a use and a :: , except for std

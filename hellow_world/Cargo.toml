@@ -1,6 +1,0 @@
-[package]
-name = "hellow_world"
-version = "0.1.0"
-authors = ["aidan"]
-
-[dependencies]
