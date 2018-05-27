@@ -1,0 +1,6 @@
+[package]
+name = "question_2"
+version = "0.1.0"
+authors = ["Aidan Coward <aidan.coward@gmail.com>"]
+
+[dependencies]
