@@ -1,0 +1,3 @@
+if xmonad fails to start bc of a missing .so file try 
+	try 'xmonad --recompile'
+	needs to happen after every update
