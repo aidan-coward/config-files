@@ -1,0 +1,21 @@
+To create a systemd ssh-agent service, you need to create a file in ~/.config/systemd/user/ssh-agent.service because ssh-agent is user isolated.
+
+[Unit]
+Description=SSH key agent
+
+[Service]
+Type=simple
+Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+ExecStart=/usr/bin/ssh-agent -D -a $SSH_AUTH_SOCK
+
+[Install]
+WantedBy=default.target
+Add SSH_AUTH_SOCK DEFAULT="${XDG_RUNTIME_DIR}/ssh-agent.socket" to ~/.pam_environment.
+
+Finally enable and start this service.
+
+systemctl --user enable ssh-agent
+systemctl --user start ssh-agent
+And, if you are using ssh version higher than 7.2. echo 'AddKeysToAgent  yes' >> ~/.ssh/config
+
+This will instruct the ssh client to always add the key to a running agent, so there’s no need to ssh-add it beforehand.

@@ -101,6 +101,8 @@ alias mtag='id3v2'
 source /usr/share/git/completion/git-completion.bash
 alias git='e git'
 alias push='e git push -u origin master'
+alias ga='git add .'
+alias gp='git push origin master'
 # set vim as default editor
 export EDITOR="vim"
 
