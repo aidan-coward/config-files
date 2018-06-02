@@ -15,7 +15,7 @@ ssh/chromebook/id_rsa
 ssh/dell/id_rsa
 mutt/password
 conky/password.py
-calibre
+calibre/*
 weechat/logs/
 weechat/urlserver_list.txt
 weechat/weechat.log
