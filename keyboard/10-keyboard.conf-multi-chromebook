@@ -1,0 +1,8 @@
+Section "InputClass"
+	Identifier		"Keyboard Defaults"
+	MatchIsKeyboard		"yes"
+	Option 			"XkbLayout" "us,ca"
+	Option			"XkbVariant" "dvp,multi"
+	Option			"XkbOptions" "grp:alt_space_toggle"
+EndSection
+

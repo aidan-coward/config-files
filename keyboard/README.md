@@ -30,5 +30,9 @@ Note
   - `AltGr + k` is remapped to provide ù (u with grave accent) 
   - `AltGr + Shift + k` is remapped to provide Ù (u with grave accent) 
 
+the chromebook version has swap_caps removed
+
 The file `10-keyboard.conf` is placed in /etc/X11/xorg.conf.d/
+
+
 

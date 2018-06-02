@@ -177,9 +177,3 @@ alias keys="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^
 export NETCTL_DEBUG=yes
 
 export MOZ_PLUGIN_PATH="/usr/lib/mozilla/plugins"
-
-
-. /home/aidan/torch/install/bin/torch-activate
-
-
-. /home/aidan/torch-cl/install/bin/torch-activate
