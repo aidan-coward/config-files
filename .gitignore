@@ -17,3 +17,5 @@ mutt/password
 conky/password.py
 calibre
 weechat/logs/
+weechat/urlserver_list.txt
+weechat/weechat.log
