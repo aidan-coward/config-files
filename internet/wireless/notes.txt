@@ -1,3 +1,6 @@
-ran
-	ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant /usr/lib/dhcpcd/dhcpcd-hooks/
-so that dhcpcd's wpa_supplicant is kept after package upgrades
+systemctl enable/start dhcpcd@wlp1s0
+
+ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant /usr/lib/dhcpcd/dhcpcd-hooks/ 
+
+no-wait.conf goes to /etc/systemd/system/dhcpcd@.service.d/
+

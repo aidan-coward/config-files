@@ -1,11 +1,13 @@
 #this file lists all of the modifications to a stock archlinux system done
 
+##################
+# system
+##################
 
-#################
-# btrfs
-################
+# moved /var/cache/pacman/pkg to /home/aidan/.pkg-cache
+# did so in pacman.conf 
+# saves space on ssd
 
-# enable transparent compression
 ##################
 # ssd optimization
 ##################
@@ -29,14 +31,6 @@
 # added to /etc/default/grub
 GRUB_FORCE_HIDDEN_MENU="true"
 
-################## mkinitcpio/initramfs
-# removed fsck hook from mkinitcpio.conf because btrfs doesn't need fsck on boot
-
-#currently not used
-# was added to mkinitcpio-custom.conf 
-# ahci sd_mod btrfs
-
-
 ##################
 # poweroff and suspend
 ##################
@@ -47,6 +41,8 @@ GRUB_FORCE_HIDDEN_MENU="true"
 # shift+poweroff to shutdown
 # see ~/.xbindkeysrc
 
+# system-wide terminal message at 5% battery
+
 
 
 #####################
@@ -54,13 +50,10 @@ GRUB_FORCE_HIDDEN_MENU="true"
 #####################
 
 # BELL405 network config uses a static ip address
+	# how was this done?
 
-
-#####################
-# keyboard stuff
-#####################
- 
-#special chromebook media/function keys are in ~/.xbindkeys
+# /etc/wpa_supplicant/wpa_supplicant.conf is symlinked to /home/aidan/documents/linux/arch/internet/wireless/wpa_supplicant.conf
+	# add new entry with 'wpa_passphrase SSID passphrase >> wpa_supplicant.conf'
 
 
 #####################
@@ -73,15 +66,6 @@ GRUB_FORCE_HIDDEN_MENU="true"
 	user profiles
 	programs
 
-# switch to btrfs
-	use compression
-	snapshots?
-	set up defrag(is this a sometimes thing?)
-
-# hypem on luakit doesn't work - try reinstalling flash 
-	what else does it require - see email from person
-	look at what makes nuvola player works
-
 # laptop optimization for battery life
  	look at arch wiki
 	pstate governor
@@ -90,8 +74,10 @@ GRUB_FORCE_HIDDEN_MENU="true"
 
 # backlight
 
-yaourt
-ssd optimization
-https://wiki.haskell.org/Xmonad/Frequently_asked_questions
-fbcmd
-nuvola player 3 make aur package?
+# cheap remote server - ssh
+	# set up regular remote backups of config files
+
+# luakit replacement
+	# qt browser? with new backend
+
+# mutt

@@ -1,12 +1,17 @@
 ## Keyboard config files
 
-The file `dvp-1_2_1.map.gz` is placed in /usr/share/kbd/keymaps/i386/dvorak and should be renamed to `dvp.map.gz`
+The file `dvp-1_2_1.map.gz` is placed in /usr/share/kbd/keymaps/i386/dvorak and should be renamed to `dvp.map
 
 Note 
-- You must add `KEYMAP=dvp` to /etc/vconsole to effectuate these changes 
+- You must add `KEYMAP=dvp` to /etc/vconsole.conf to effectuate these changes 
 - This file configures the behaviour of the virtual console, not X 
-- dvp.map-chromebook is for chromebook
-  - search key is mapped to control
+- Differences between stock dvp.map 
+  - Caps lock key is set to Control
+  - Control key is set to Caps Lock
+- Differences between dvp.map and dvp.map-chromebook
+  - keycode 1(escape key) is set to Escape
+  - keycode 125(chromebook search key) is set to Control
+- To find keycodes run 'showkey --keycodes'
 
 The file `us` is placed in /usr/share/X11/xkb/symbols 
 Note
