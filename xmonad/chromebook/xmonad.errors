@@ -1,21 +1,89 @@
 
-xmonad.hs:238:13: Warning: Tab character
+xmonad.hs:1:1: error:
+    Could not find module ‘Prelude’
+    There are files missing in the ‘base-4.11.1.0’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+  |
+1 | --nooooot
+  | ^
 
-xmonad.hs:284:1: Warning: Tab character
+xmonad.hs:8:1: error:
+    Could not find module ‘XMonad’
+    There are files missing in the ‘xmonad-0.13’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+  |
+8 | import XMonad
+  | ^^^^^^^^^^^^^
 
-xmonad.hs:285:1: Warning: Tab character
+xmonad.hs:9:1: error:
+    Could not find module ‘Data.Monoid’
+    There are files missing in the ‘base-4.11.1.0’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+  |
+9 | import Data.Monoid
+  | ^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:286:1: Warning: Tab character
+xmonad.hs:10:1: error:
+    Could not find module ‘System.Exit’
+    There are files missing in the ‘base-4.11.1.0’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+   |
+10 | import System.Exit
+   | ^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:287:1: Warning: Tab character
+xmonad.hs:12:1: error:
+    Could not find module ‘XMonad.StackSet’
+    There are files missing in the ‘xmonad-0.13’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+   |
+12 | import qualified XMonad.StackSet as W
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:288:1: Warning: Tab character
+xmonad.hs:13:1: error:
+    Could not find module ‘Data.Map’
+    There are files missing in the ‘containers-0.5.11.0’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+   |
+13 | import qualified Data.Map        as M
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:289:1: Warning: Tab character
+xmonad.hs:16:1: error:
+    Could not find module ‘XMonad.Hooks.ManageDocks’
+    Use -v to see a list of the files searched for.
+   |
+16 | import XMonad.Hooks.ManageDocks
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:290:1: Warning: Tab character
+xmonad.hs:17:1: error:
+    Could not find module ‘XMonad.Hooks.DynamicLog’
+    Use -v to see a list of the files searched for.
+   |
+17 | import XMonad.Hooks.DynamicLog
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-xmonad.hs:311:12: Warning:
-    In the use of ‘defaultConfig’
-    (imported from XMonad, but defined in XMonad.Config):
-    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+xmonad.hs:18:1: error:
+    Could not find module ‘XMonad.Util.Run’
+    Use -v to see a list of the files searched for.
+   |
+18 | import XMonad.Util.Run(spawnPipe)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:19:1: error:
+    Could not find module ‘XMonad.Layout.NoBorders’
+    Use -v to see a list of the files searched for.
+   |
+19 | import XMonad.Layout.NoBorders
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:22:1: error:
+    Could not find module ‘XMonad.Actions.SpawnOn’
+    Use -v to see a list of the files searched for.
+   |
+22 | import XMonad.Actions.SpawnOn
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

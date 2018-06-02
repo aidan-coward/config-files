@@ -254,7 +254,7 @@ myEventHook = mempty
 ------------------------------------------------------------------------
 -- Status bars and logging
 
-myStatusBar = "conky | dzen2 -xs 1 -ta r" 
+myStatusBar = "conky --config=/home/aidan/.config/conky/conky-chromebook.conf | dzen2 -xs 1 -ta r" 
 --myTopBar = "conky | dzen2 -xs 2 -ta r" 
 --myTopBar = "urxvt"
 
