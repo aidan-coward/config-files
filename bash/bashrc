@@ -26,7 +26,7 @@ alias xl='less /home/aidan/.local/share/xorg/Xorg.0.log'
 # pacman shorthands
 alias aurget='yaourt'
 alias get='sudo pacman -S --needed'
-alias up='sudo pacman -Syu; rustup update;  yaourt -Syua; sudo paccache -r -k 3'
+alias up='sudo pacman -Syu; rustup update;  yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/current-packages.txt'
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
