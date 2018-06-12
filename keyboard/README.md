@@ -1,6 +1,6 @@
 ## Keyboard config files
 
-The file `dvp-1_2_1.map.gz` is placed in /usr/share/kbd/keymaps/i386/dvorak and should be renamed to `dvp.map
+The file `dvp-1_2_1.map.gz` is placed in /usr/share/kbd/keymaps/i386/dvorak and should be renamed to `dvp.map.gz`
 
 Note 
 - You must add `KEYMAP=dvp` to /etc/vconsole.conf to effectuate these changes 
