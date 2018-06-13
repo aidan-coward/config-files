@@ -1,4 +1,6 @@
 acpi
+acpid
+archlinux-keyring
 autoconf
 automake
 bash
@@ -56,6 +58,7 @@ man-pages
 mdadm
 nano
 netctl
+openssh
 pacman
 pacman-contrib
 patch
@@ -63,7 +66,7 @@ pciutils
 pcmciautils
 pdfjs
 perl
-polkit
+pkgconf
 procps-ng
 psmisc
 qutebrowser
@@ -89,11 +92,13 @@ vi
 vim
 weechat
 which
-wireless_tools
 wpa_supplicant
 xbindkeys
+xf86-video-ati
+xf86-video-intel
 xfsprogs
 xmonad
+xmonad-contrib
 xorg-server
 xorg-xev
 xorg-xinit

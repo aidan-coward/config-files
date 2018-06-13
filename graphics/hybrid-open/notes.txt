@@ -1,5 +1,6 @@
-added 10-radeon.conf
-
 added radeon to /etc/mkinitcpio.conf
 
-added 20-gpu.conf to /etc/X11/xorg.conf.d/
+both
+20-gpu.conf
+10-radeon.conf
+would go to /etc/X11/xorg.conf.d/ but it doesn't work bc you need to use prime

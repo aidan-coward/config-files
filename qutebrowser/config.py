@@ -5,6 +5,7 @@ config.bind('d','run-with-count 4 scroll down')
 config.bind('x','tab-close')
 
 # control-tab switches to next tab
+config.unbind('<Control-Tab>')
 config.bind('<Control-Tab>','tab-next')
 # control-shift-tab switches back a tab
 config.bind('<Control-Shift-Tab','tab-prev 1')
@@ -37,3 +38,20 @@ c.editor.command = ["urxvt", "-e", "vim", "{}"]
 c.aliases = {
         "m": "open -t gmail.com"
         }
+
+# increase font size - default is 16
+# change fonts
+
+c.fonts.web.size.default = 16
+
+c.fonts.tabs = "13pt Source Code Pro"
+
+c.fonts.statusbar = "13pt Source Code Pro"
+
+c.fonts.prompts = "13pt Source Code Pro"
+
+c.fonts.completion.entry = "13pt Source Code Pro"
+
+c.fonts.completion.category = "13pt Source Code Pro"
+
+

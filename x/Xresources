@@ -1,5 +1,8 @@
 !increases font size
 !URxvt*font: xft:7x14:size=8
+!URxvt.font: xft:Terminus:pixelsize=16
+URxvt.font: xft:Source Code Pro Medium:size=14
+!URxvt.letterSpace: -1
 !-------------
 ! urxvt stuff
 !------------
