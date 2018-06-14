@@ -13,3 +13,6 @@
 [submodule "/home/aidan/.config/vim/pack/packages/start/lightline"]
 	path = /home/aidan/.config/vim/pack/packages/start/lightline
 	url = https://github.com/itchyny/lightline.vim
+[submodule "lightline.vim"]
+	path = lightline.vim
+	url = https://github.com/itchyny/lightline.vim
