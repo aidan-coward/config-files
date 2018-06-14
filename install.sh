@@ -88,4 +88,6 @@ if [$HOSTNAME == sky-xul ]
 	sudo pacman -S xf86-video intel
 fi
 
-
+# set rust stuff
+rustup install stable
+rustup default stable

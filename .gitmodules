@@ -10,3 +10,6 @@
 [submodule "vim/pack/packages/start/vim-multiple-cursors"]
 	path = vim/pack/packages/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "/home/aidan/.config/vim/pack/packages/start/lightline"]
+	path = /home/aidan/.config/vim/pack/packages/start/lightline
+	url = https://github.com/itchyny/lightline.vim
