@@ -1,3 +1,12 @@
 [submodule "vim/pack/my-plugins/start/lightline.vim"]
 	path = vim/pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "rust.vim"]
+	path = rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/pack/my-plugins/start/vim-multiple-cursors"]
+	path = vim/pack/my-plugins/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "vim/pack/my-plugins/start/vim-commentary"]
+	path = vim/pack/my-plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
