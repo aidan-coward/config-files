@@ -1,6 +1,10 @@
 " provide utf8 encoding
 :set encoding=utf-8
 
+" This is for vim-latexsuite
+set runtimepath+=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM,vimfiles/after,~/.vim/after
+
+
 " this disables netrwhist saving
 let g:netrw_dirhistmax = 0
 
@@ -69,8 +73,6 @@ set iskeyword+=:
 "spell check for latex only in english/french
 autocmd FileType tex setlocal spell spelllang=en_ca,fr
 
-" This is for vim-latexsuite
-set runtimepath+=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM,vimfiles/after,~/.vim/after
 
 
 
@@ -116,3 +118,4 @@ autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
 
 " mystery option for mutt
 "setlocal fo+=aw
+"

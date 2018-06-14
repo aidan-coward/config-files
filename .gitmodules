@@ -1,15 +1,3 @@
-[submodule "vim/pack/packages/start/vim-airline"]
-	path = vim/pack/packages/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/pack/packages/start/rust"]
-	path = vim/pack/packages/start/rust
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "vim/pack/packages/start/commentary"]
-	path = vim/pack/packages/start/commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "vim/pack/packages/start/vim-multiple-cursors"]
-	path = vim/pack/packages/start/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "vim/pack/packages/start/lightline.vim"]
-	path = vim/pack/packages/start/lightline.vim
+[submodule "vim/pack/my-plugins/start/lightline.vim"]
+	path = vim/pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
