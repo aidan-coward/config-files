@@ -4,6 +4,9 @@
 " This is for vim-latexsuite
 set runtimepath+=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM,vimfiles/after,~/.vim/after
 
+" lightline package
+set laststatus=2
+
 
 " this disables netrwhist saving
 let g:netrw_dirhistmax = 0

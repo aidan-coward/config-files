@@ -19,7 +19,7 @@ config.bind('t','set-cmd-text --space :open --tab')
 
 # set search engines
 c.url.searchengines = {
-        "DEFAULT": "https://www.google.com.ar/search?q={}",
+        "DEFAULT": "https://www.google.ca/search?q={}",
         "aw": "https://wiki.archlinux.org/?search={}",
         "tpb": "https://thepiratebay.org/search/{}",
         "ew": "https://en.wikipedia.org/wiki/{}",

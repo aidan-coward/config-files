@@ -40,6 +40,7 @@ alias shut='systemctl poweroff'
 alias reboot='systemctl reboot'
 
 # setsid commonly used programs
+alias thunderbird='setsid thunderbird'
 alias evince='setsid evince'
 alias ch='setsid chromium; exit'
 alias calc='setsid gnome-calculator; exit'
@@ -120,7 +121,7 @@ alias sx='tk;startx'
 # Sound/music/language/game
 alias pu='pulseaudio --start' 
 alias pa='setsid pavucontrol'
-alias cmus='cd /home/aidan/music; cmus'
+#alias cmus='cd /home/aidan/music; cmus'
 alias al='alsamixer'
 alias m='setsid urxvt -e alsamixer;cd ~/; cmus'
 alias e='LANG="en_CA.UTF-8"'
