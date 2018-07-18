@@ -7,7 +7,7 @@ urxvtd -q -f -o
 # set keyboard delay rate
 kbdrate
 # set the cursor
-#xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr
 # set dvp layout
 #setxkbmap -rules xorg -model pc104 -layout us -variant dvp -option "ctrl:swapcaps" 
 # make clipboard consistent across system

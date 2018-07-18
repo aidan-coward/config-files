@@ -8,7 +8,8 @@ config.bind('x','tab-close')
 config.unbind('<Control-Tab>')
 config.bind('<Control-Tab>','tab-next')
 # control-shift-tab switches back a tab
-config.bind('<Control-Shift-Tab','tab-prev 1')
+config.unbind('<Control-Shift-Tab>')
+config.bind('<Control-Shift-Tab>','tab-prev')
 
 # open new tab 
 config.bind('t','set-cmd-text --space :open --tab')

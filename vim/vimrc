@@ -103,6 +103,9 @@ map <F4> :w <CR> :!gcc % && ./a.out <CR>
 " These are so that vim loads the templates by default for specified file "
 
 autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e 
+
+" for vim-multiple-cursors
+let g:multi_cursor_quit_key		= '<Esc>'
  
 "fixing of é letter :
 "imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
