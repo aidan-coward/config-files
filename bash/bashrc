@@ -96,6 +96,7 @@ alias xmind='setsid XMind'
 alias wup='sudo ip link set wlp9s0 up'
 alias wd='sudo ip link set wlp9s0 down'
 alias mtag='id3v2'
+alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
 
 #####
 # Git
