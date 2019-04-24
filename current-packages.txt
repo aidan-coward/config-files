@@ -1,5 +1,4 @@
 acpi
-acpid
 adobe-source-code-pro-fonts
 adobe-source-han-serif-otc-fonts
 alsa-utils
@@ -8,8 +7,9 @@ arp-scan
 asp
 aspell
 audacity
+alsa-tools
+alsa-utils
 autoconf
-autocutsel
 automake
 bash
 bind-tools
@@ -20,7 +20,6 @@ bzip2
 calibre
 ccache
 chromium
-cmake
 cmus
 conky
 coreutils
@@ -37,6 +36,8 @@ e2fsprogs
 eog
 evince
 extundelete
+dzen2
+e2fsprogs
 fakeroot
 file
 filesystem
@@ -147,10 +148,14 @@ reiserfsprogs
 rsync
 rtorrent
 ruby
+polkit
+procps-ng
+psmisc
+qutebrowser
+reiserfsprogs
 rustup
 rxvt-unicode
 s-nail
-samba
 sed
 shadow
 smartmontools
@@ -160,8 +165,6 @@ sysfsutils
 systemd
 systemd-sysvcompat
 tar
-tcl
-terminus-font
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -182,6 +185,7 @@ ttf-amiri
 ttf-bitstream-vera
 ttf-liberation
 unoconv
+ttf-bitstream-vera
 unzip
 usbutils
 util-linux
@@ -197,15 +201,12 @@ wine-mono
 wine_gecko
 winetricks
 wmname
+wireless_tools
 wpa_supplicant
 xbindkeys
-xf86-video-ati
-xf86-video-intel
 xfsprogs
 xmage
 xmonad
-xmonad-contrib
-xorg-fonts-alias
 xorg-server
 xorg-xev
 xorg-xinit

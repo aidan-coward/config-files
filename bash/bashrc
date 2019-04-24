@@ -107,6 +107,7 @@ alias mtag='id3v2'
 alias pc='curl -F c=@- http://ix.io'
 alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
 alias mage-client='wmname LG3D; mage-client'
+alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
 
 #####
 # Git
