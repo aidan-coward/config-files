@@ -152,7 +152,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --
     [((m .|. modm, k), windows $ f i)
         | (i, k) <- zip myWorkspaces extraSwitchKeys
-        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+        , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
     ++
 
     --
@@ -286,7 +286,8 @@ myStartupHook = do
 	--spawnOn "3" "top"
 	spawnOn "5" "urxvt"
 	--spawnOn "6" "urxvt weechat"
-	--spawnOn "8" "urxvt -e rtorrent" 
+	spawnOn "8" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent-torrentday'" 
+	spawnOn "8" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'" 
 
 
 

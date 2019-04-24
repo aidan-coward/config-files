@@ -20,3 +20,5 @@ weechat/logs/
 weechat/urlserver_list.txt
 weechat/weechat.log
 libreoffice/*
+GIMP/*
+VirtualBox/*

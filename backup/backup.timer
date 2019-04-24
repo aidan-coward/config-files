@@ -1,0 +1,12 @@
+[Unit]
+Description=Run backup script weekly
+
+[Timer]
+# start every monday and thursday at 1:00am 
+OnCalendar= Mon,Thu *-*-* 01:00:00
+Persistent=true
+
+[Install]
+# old WantedBy=timers.target
+# try WantedBy=multi-user.target
+WantedBy=default.target

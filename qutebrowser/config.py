@@ -1,5 +1,10 @@
 # sets d to go down with a 4x larger scroll increment than j
-config.bind('d','run-with-count 4 scroll down')
+config.bind('d','scroll-page 0 0.2')
+# old - interacted with text boxes and youtube videos
+# config.bind('d','run-with-count 4 scroll down')
+    
+# 
+config.bind('<Control-d>','scroll-page 0 -0.2')
 
 # x closes tab
 config.bind('x','tab-close')
@@ -14,6 +19,12 @@ config.bind('<Control-Shift-Tab>','tab-prev')
 # open new tab 
 config.bind('t','set-cmd-text --space :open --tab')
 
+# change scrolling so that it doesn't interact with text boxes that are currently focused
+config.unbind('k')
+config.unbind('j')
+config.bind('k', 'scroll-page 0 -0.05')
+config.bind('j', 'scroll-page 0 0.05')
+
 # open quickmark with go
 #config.unbind('go', mode='normal') 
 #config.bind('go','set-cmd-text --space :quickmark-load')
@@ -22,16 +33,32 @@ config.bind('t','set-cmd-text --space :open --tab')
 c.url.searchengines = {
         "DEFAULT": "https://www.google.ca/search?q={}",
         "aw": "https://wiki.archlinux.org/?search={}",
-        "tpb": "https://thepiratebay.org/search/{}",
-        "ew": "https://en.wikipedia.org/wiki/{}",
+        "tpb": "https://thepiratebay.rocks/search/{}",
+        "ew": "https://en.wikipedia.org/wiki/index.php?search={}",
         "tube": "https://www.youtube.com/results?search_query={}",
         "maps": "https://www.google.com/maps/search/{}",
         "a": "https://www.archlinux.org/packages/?q={}",
         "aur": "https://aur.archlinux.org/packages.php?K={}",
         "fr": "https://fr.wiktionary.org/wiki/{}",
         "fc": "https://fr.wiktionary.org/wiki/Annexe:Conjugaison_en_fran%C3%A7ais/{}",
-        "git": "https://github.com/search?q={}"
+        "git": "https://github.com/search?q={}",
+        "cr": "https://crates.io/search?q={}",
+        "mw": "https://mtg.gamepedia.com/index.php?search={}",
+        "mc": "http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[{}]",
+        "td": "https://www.torrentday.com/t?q={}&qf=#torrents",
+        "ftf": "https://facetofacegames.crystalcommerce.com/products/search?query={}",
+        "gk": "http://www.gamekeeperonline.com/products/search?q={}",
+        "ab": "http://www.labyss.ca/products/search?q={}",
+        "urban": "https://www.urbandictionary.com/define.php?term={}",
+        "en": "http://www.wordreference.com/enfr/{}",
+        "scry": "https://scryfall.com/search?q={}",
+        "sc": "https://soundcloud.com/search?q={}",
+        "deb": "https://packages.debian.org/search?searchon=sourcenames&keywords={}",
+        "bulba": "https://bulbapedia.bulbagarden.net/wiki/{}",
+        "r": "https://doc.rust-lang.org/std/index.html?search={}",
+        "fsyn": "http://www.synonymes.com/synonyme.php?mot={}&x=0&y=0"
         }
+
 
 # set vim as editor
 c.editor.command = ["urxvt", "-e", "vim", "{}"]
@@ -55,4 +82,4 @@ c.fonts.completion.entry = "13pt Source Code Pro"
 
 c.fonts.completion.category = "13pt Source Code Pro"
 
-
+c.tabs.background = True

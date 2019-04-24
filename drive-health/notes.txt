@@ -1,0 +1,10 @@
+to find the disk with uuid use /dev/disk/by-uuid/<UUID>
+ex:
+/dev/disk/by-uuid/eef838d9-9fd8-4286-9f05-6711fa8b8f4a 
+
+time required for extended test:
+sudo smartctl -c /dev/disk/by-uuid/eef838d9-9fd8-4286-9f05-6711fa8b8f4a  | grep -A 1 Extended| awk "NR==2{print;exit}" | sed 's/[^0-9]*//g'
+
+current wrapper script doesn't show all messages from run script
+
+need to start + enable both .service and .timer files 

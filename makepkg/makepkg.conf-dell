@@ -68,6 +68,9 @@ BUILDENV=(!distcc color ccache check !sign)
 #-- Specify a directory for package building.
 #BUILDDIR=/tmp/makepkg
 
+# temporary fix for symlinks in $startdir
+BUILDDIR="${BUILDDIR:-$startdir}"
+
 #########################################################################
 # GLOBAL PACKAGE OPTIONS
 #   These are default values for the options=() settings
@@ -113,7 +116,7 @@ PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod)
 #-- Destination: specify a fixed directory where all packages will be placed
 PKGDEST=/home/aidan/abs
 #-- Source cache: specify a fixed directory where source files will be cached
-SRCDEST=/home/aidan/src
+SRCDEST=/home/aidan/abs/src
 #-- Source packages: specify a fixed directory where all src packages will be placed
 SRCPKGDEST=/home/aidan/abs/srcpackages
 #-- Log files: specify a fixed directory where all log files will be placed

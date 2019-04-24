@@ -22,11 +22,15 @@ alias duhl='du -ha --max-depth 1 | sort -h | less'
 alias lsblk='lsblk -o NAME,MAJ:MIN,RM,SIZE,RO,TYPE,FSTYPE,MOUNTPOINT,UUID'
 alias xel='grep EE /home/aidan/.local/share/xorg/Xorg.0.log'
 alias xl='less /home/aidan/.local/share/xorg/Xorg.0.log'
+function mkcd
+{
+  command mkdir $1 && cd $1
+}
 
 # pacman shorthands
 alias aurget='yaourt'
 alias get='sudo pacman -S --needed'
-alias up='sudo pacman -Syu; /home/aidan/rust/compilation-script/target/release/compilation-script; sudo pacman -U /home/aidan/abs/*.pkg.tar; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/current-packages.txt'
+alias up='sudo pacman -Syu; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/current-packages.txt'
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
@@ -40,6 +44,7 @@ alias shut='systemctl poweroff'
 alias reboot='systemctl reboot'
 
 # setsid commonly used programs
+alias gimp='setsid gimp'
 alias thunderbird='setsid thunderbird'
 alias evince='setsid evince'
 alias ch='setsid chromium; exit'
@@ -60,6 +65,7 @@ alias qt='setsid qutebrowser'
 alias g='DRI_PRIME=1'
 alias openttd='setsid openttd'
 alias calibre='setsid calibre'
+alias virtualbox='setsid virtualbox'
 
 
 # systemd 
@@ -71,6 +77,8 @@ alias disable='sudo systemctl disable'
 alias sus='sudo systemctl suspend'
 
 # other stuff
+alias fl='wine "/home/aidan/.wine/drive_c/Program Files (x86)/FL Studio 12/FL.exe"'
+alias syn='wine "/home/aidan/.wine/drive_c/Program Files (x86)/Syntorial/Syntorial.exe"'
 alias time='timedatectl'
 alias nu='setsid nuvolaplayer; setsid urxvt; exit'
 alias roox='sudo bash /home/aidan/internet/wireless/roo.sh && startx && pulseaudio --start'
@@ -83,8 +91,8 @@ alias edux='sudo bash /home/aidan/internet/wireless/edu.sh; startx'
 alias uwx='sudo bash /home/aidan/internet/wireless/uw-un.sh; startx'
 alias scan='sudo iwlist wlp1s0 scanning | less'
 alias transmission='sudo systemctl start transmission; transmission-cli'
-alias backup='sudo bash /mnt/external/aidan/backup.sh'
-alias ext='sudo mount /dev/sdb1 /mnt/external'
+alias ext='sudo mount -U 9e9dc360-f406-43c6-bf5b-dcdd146a6372 /mnt/external && echo "/mnt/external was successfully mounted"'
+alias uext='sudo umount /mnt/external'
 alias ubuntu='sudo mount /dev/sda6 /mnt/ubuntu'
 alias startx='cd; startx'
 alias pig='ping -c 1 www.google.com'
@@ -96,6 +104,9 @@ alias xmind='setsid XMind'
 alias wup='sudo ip link set wlp9s0 up'
 alias wd='sudo ip link set wlp9s0 down'
 alias mtag='id3v2'
+alias pc='curl -F c=@- http://ix.io'
+alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
+alias mage-client='wmname LG3D; mage-client'
 
 #####
 # Git
@@ -116,8 +127,10 @@ alias tlk='sudo systemctl start tor; sleep 5; setsid torify luakit'
 
 # X stuff
 alias merge='xrdb -merge ~/.Xresources'
-alias dual='bash /home/aidan/linux/arch/graphics/dual.sh'
-alias single='bash /home/aidan/linux/arch/graphics/single.sh'
+#alias dual='bash /home/aidan/linux/arch/graphics/dual.sh'
+#alias single='bash /home/aidan/linux/arch/graphics/single.sh'
+alias dual='xrandr --output LVDS1 --auto --output VGA1 --auto --right-of LVDS1'
+alias single='xrandr --output VGA1 --off'
 alias sx='tk;startx'
 # export BROWSER='/usr/bin/qutebrowser'
 
@@ -136,6 +149,7 @@ alias org='ln -s /home/aidan/flash/flixel/org'
 # ssh
 alias sj='ssh aidan@192.168.2.39'
 alias sx='ssh aidan@192.168.2.34'
+alias st='ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160'
 
 
 #---------------------------
@@ -181,3 +195,6 @@ alias keys="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^
 export NETCTL_DEBUG=yes
 
 export MOZ_PLUGIN_PATH="/usr/lib/mozilla/plugins"
+
+export PATH="$PATH:/root/.gem/ruby/2.6.0/gems/fpm-1.11.0/bin"
+export PATH="$PATH:/root/.gem/ruby/2.6.0/bin"

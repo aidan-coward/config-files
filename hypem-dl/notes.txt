@@ -1,0 +1,21 @@
+wget command is 
+	wget --load-cookies=cookie.txt %url-page%
+	must run this in json-files dir
+	
+format: 
+https://hypem.com/playlist/loved/aidonius/json/21/data.js
+
+steps:
+
+1) replace "," character with newline in all .js files
+
+2) grep all .js files for "artist", "title", and "dateloved" and make a seperate file for each
+
+3) iterate over Xth line of each file 
+	
+3.1) use $artist and $title to search/dl from soundcloud scsearch
+	how to tell if it's not on soundcloud?
+
+3.2) convert $dateloved to day/month/year - $DMY
+
+3.3) use $DMY, $artist and $title with output name flag of youtube-dl

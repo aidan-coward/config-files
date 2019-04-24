@@ -1,0 +1,10 @@
+[Unit]
+Description=backup script
+RequiresMountsFor=/home /mnt/external
+
+[Service]
+Type=simple
+ExecStart=/home/aidan/.config/backup/backup.sh
+
+[Install]
+WantedBy = multi-user.target

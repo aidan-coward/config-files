@@ -1,0 +1,12 @@
+--2019-04-07 14:01:07--  https://abra-electronics.com/index.php?dispatch=attachments.getfile
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving abra-electronics.com (abra-electronics.com)... 96.30.48.223
+Connecting to abra-electronics.com (abra-electronics.com)|96.30.48.223|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [text/html]
+Saving to: ‘/tmp/index.php?dispatch=attachments.getfile’
+
+              index.php?disp     [<=>                                         ]       0  --.-KB/s               index.php?dispatch=attachmen     [ <=>                                        ]       0  --.-KB/s    in 0s      
+
+2019-04-07 14:01:07 (0.00 B/s) - ‘/tmp/index.php?dispatch=attachments.getfile’ saved [0/0]
+

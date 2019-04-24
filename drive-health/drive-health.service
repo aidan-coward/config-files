@@ -1,0 +1,9 @@
+[Unit]
+Description=drive health monitoring with SMART
+
+[Service]
+Type=simple
+ExecStart=/home/aidan/.config/drive-health/drive-health.sh
+
+[Install]
+WantedBy = multi-user.target

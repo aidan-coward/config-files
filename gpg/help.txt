@@ -1,0 +1,2 @@
+how to export to another machine
+https://lists.gnupg.org/pipermail/gnupg-users/2016-September/056735.html

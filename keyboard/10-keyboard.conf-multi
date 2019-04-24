@@ -3,6 +3,6 @@ Section "InputClass"
 	MatchIsKeyboard		"yes"
 	Option 			"XkbLayout" "us,ca"
 	Option			"XkbVariant" "dvp,multi"
-	Option			"XkbOptions" "ctrl:swapcaps,grp:rctrl_toggle"
+	Option			"XkbOptions" "ctrl:swapcaps,grp:rctrl_toggle,lv3:ralt_switch"
 EndSection
 

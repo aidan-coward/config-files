@@ -70,11 +70,19 @@ autocmd Filetype tex imap ,bol \textbf{
 
 autocmd Filetype tex imap ,ita \textit{
 
+autocmd Filetype tex imap ,pb \pagebreak
+
+autocmd Filetype tex imap ,ni \noindent
+
 " latex generic completion includes colon as part of keyword
 set iskeyword+=:
 
 "spell check for latex only in english/french
 autocmd FileType tex setlocal spell spelllang=en_ca,fr
+
+" compile automatically on save of a .tex or .utex file
+autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
+autocmd BufWritePost *.utex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
 
 
 
@@ -125,3 +133,10 @@ let g:multi_cursor_quit_key		= '<Esc>'
 " mystery option for mutt
 "setlocal fo+=aw
 "
+
+"""""""""""""""""""""'
+" yaml, yml
+" """""""""""""""""""
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
