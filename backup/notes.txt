@@ -3,3 +3,5 @@ it is normal that rsync starts multiple processes
 don't update system during backup
 
 files go in /etc/systemd/system
+
+made special ssh key for rsync root access

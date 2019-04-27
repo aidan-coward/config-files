@@ -48,7 +48,7 @@ autocmd Filetype tex imap ,eit \end{itemize} <Enter>
 
 autocmd Filetype tex imap ,ben \begin{enumerate} <Enter>
 
-"autocmd Filetype tex imap ,een \end{enumerate}
+autocmd Filetype tex imap ,een \end{enumerate}
 
 autocmd Filetype tex imap ,cha \chapter*{
 

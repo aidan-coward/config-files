@@ -30,7 +30,7 @@ function mkcd
 # pacman shorthands
 alias aurget='yaourt'
 alias get='sudo pacman -S --needed'
-alias up='sudo pacman -Syu; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/current-packages.txt'
+alias up='sudo pacman -Syu; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt'
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
@@ -150,7 +150,7 @@ alias org='ln -s /home/aidan/flash/flixel/org'
 # ssh
 alias sj='ssh aidan@192.168.2.39'
 alias sx='ssh aidan@192.168.2.34'
-alias st='ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160'
+alias st='ssh aidan@192.168.2.160'
 
 
 #---------------------------

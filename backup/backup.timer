@@ -7,6 +7,4 @@ OnCalendar= Mon,Thu *-*-* 01:00:00
 Persistent=true
 
 [Install]
-# old WantedBy=timers.target
-# try WantedBy=multi-user.target
-WantedBy=default.target
+WantedBy=timers.target

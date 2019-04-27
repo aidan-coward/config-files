@@ -1,11 +1,7 @@
-\documentclass[12pt, letterpaper]{article}
-\usepackage{mathptmx}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[T1]{fontenc}
-\usepackage{datetime}
-\usepackage[french]{babel}
 \usepackage[normalem]{ulem}
-\usepackage[letterpaper,left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry} % margins specified by uqam's phil. style guide
-% \usepackage[margin=1.2in]{geometry} % this is usual margins
+\usepackage[letterpaper,margin=1in]{geometry}
 \usepackage{setspace} % double spacing
 \usepackage{hyperref}
 	% \href{http://url}{link words}
@@ -22,34 +18,5 @@
 %\fancyhf{}
 %\renewcommand{\headrulewidth}{0mm} % removes line below header
 
-\doublespacing
-
 \begin{document}
 
-% centered titlepage as per uqam requirements
-\begin{titlepage}
-	\begin{center}
-
-% sigle de cours: nom du cours
-% PHI1015: Histoire et Existence 
-
-% teacher
-%Présenté à Marc Djaballah 
-
-% name of assignment
-Travail 1 
-
-par Aidan Coward, COWA31039304
-
-Université du Québec à Montréal
-
-% this puts today's date at the bottom of the page
-\vfill
-\textbf{\today}
-
-	\end{center}
-\end{titlepage}
-
-\begin{center}
-% Title 
-\end{center}
