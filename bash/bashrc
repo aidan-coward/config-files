@@ -22,18 +22,20 @@ alias duhl='du -ha --max-depth 1 | sort -h | less'
 alias lsblk='lsblk -o NAME,MAJ:MIN,RM,SIZE,RO,TYPE,FSTYPE,MOUNTPOINT,UUID'
 alias xel='grep EE /home/aidan/.local/share/xorg/Xorg.0.log'
 alias xl='less /home/aidan/.local/share/xorg/Xorg.0.log'
+alias cdir='ls -1 | wc -l'
 function mkcd
 {
-  command mkdir $1 && cd $1
+  command mkdir -p $1 && cd $1
 }
 
 # pacman shorthands
 alias aurget='yaourt'
-alias get='sudo pacman -S --needed'
+alias get='sudo pacman -Syu --needed'
 alias up='sudo pacman -Syu; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt'
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
+alias smakepkg='makepkg -sif --config /home/aidan/.config/makepkg/makepkg.conf-chromebook'
 
 # editing shortcuts
 alias .bash='vim /home/aidan/.bashrc'
@@ -107,7 +109,9 @@ alias mtag='id3v2'
 alias pc='curl -F c=@- http://ix.io'
 alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
 alias mage-client='wmname LG3D; mage-client'
+alias xmage='wmname LG3D; setsid mage-client; setsid mage-server'
 alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
+alias rtp="setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r r    torrent'; urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'"
 
 #####
 # Git
@@ -151,6 +155,7 @@ alias org='ln -s /home/aidan/flash/flixel/org'
 alias sj='ssh aidan@192.168.2.39'
 alias sx='ssh aidan@192.168.2.34'
 alias st='ssh aidan@192.168.2.160'
+alias sm='ssh maisy@192.168.2.162'
 
 
 #---------------------------

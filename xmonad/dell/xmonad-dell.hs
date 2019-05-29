@@ -280,14 +280,12 @@ myLogHook = return ()
 --myStartupHook = return ()
 --myStartupHook :: X ()
 myStartupHook = do 
-	spawnOn "5" "qutebrowser"
-	--spawnOn "2" "urxvt -e cmus"
-	--spawnOn "2" "luakit www.hypem.com"
-	--spawnOn "3" "top"
-	spawnOn "5" "urxvt"
-	--spawnOn "6" "urxvt weechat"
-	spawnOn "8" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent-torrentday'" 
-	spawnOn "8" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'" 
+	spawnOn "%" "qutebrowser www.hypem.com messenger.com gmail.com "
+	spawnOn "[" "qutebrowser"
+	spawnOn "[" "urxvt"
+	spawnOn "%" "urxvt -e weechat"
+	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent-torrentday'" 
+	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'" 
 
 
 

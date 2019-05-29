@@ -12,6 +12,7 @@ autoconf
 autocutsel
 automake
 bash
+biber
 bind-tools
 binutils
 bison
@@ -129,7 +130,6 @@ pdfjs
 pepper-flash
 perl
 pkgconf
-playonlinux
 pocketsphinx
 procps-ng
 psmisc
@@ -177,6 +177,7 @@ texlive-publishers
 texlive-science
 thunderbird
 tmux
+traceroute
 tree
 ttf-amiri
 ttf-bitstream-vera
@@ -191,6 +192,7 @@ virtualbox
 virtualbox-host-modules-arch
 vlc
 weechat
+wget
 which
 wine
 wine-mono
