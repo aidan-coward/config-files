@@ -41,7 +41,7 @@ c.url.searchengines = {
         "aur": "https://aur.archlinux.org/packages.php?K={}",
         "fr": "https://fr.wiktionary.org/wiki/{}",
         "fc": "https://fr.wiktionary.org/wiki/Annexe:Conjugaison_en_fran%C3%A7ais/{}",
-        "git": "https://github.com/search?q={}",
+        "g": "https://github.com/search?q={}",
         "cr": "https://crates.io/search?q={}",
         "mw": "https://mtg.gamepedia.com/index.php?search={}",
         "mc": "http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[{}]",

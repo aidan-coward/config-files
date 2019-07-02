@@ -53,6 +53,7 @@ gettext
 gimp
 git
 glibc
+gnome-calculator
 gparted
 gperftools
 grep
@@ -67,6 +68,7 @@ gulp
 gvfs-afc
 gzip
 hdparm
+higan
 ifuse
 inetutils
 intel-ucode
@@ -108,6 +110,8 @@ man-db
 man-pages
 mdadm
 megatools
+mlocate
+mplayer
 mpv
 msmtp
 msmtp-mta
@@ -140,6 +144,7 @@ python-path.py
 python-plumbum
 python-zc.lockfile
 python-zxcvbn
+python2-flask-cors
 python2-lxml
 python2-plumbum
 qutebrowser
@@ -177,6 +182,7 @@ texlive-publishers
 texlive-science
 thunderbird
 tmux
+tor-browser
 traceroute
 tree
 ttf-amiri

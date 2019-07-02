@@ -111,7 +111,7 @@ alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
 alias mage-client='wmname LG3D; mage-client'
 alias xmage='wmname LG3D; setsid mage-client; setsid mage-server'
 alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
-alias rtp="setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r r    torrent'; urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'"
+alias rtp="setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty stop undef; stty start undef; screen -r rtorrent-torrentday' & setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent' & ; exit"
 
 #####
 # Git
