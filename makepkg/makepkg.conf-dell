@@ -114,7 +114,7 @@ PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod)
 # Default: put built package and cached source in build directory
 #
 #-- Destination: specify a fixed directory where all packages will be placed
-PKGDEST=/var/cache/pacman/pkg
+PKGDEST=/home/aidan/abs
 #-- Source cache: specify a fixed directory where source files will be cached
 SRCDEST=/home/aidan/abs/src
 #-- Source packages: specify a fixed directory where all src packages will be placed

@@ -70,6 +70,7 @@ gzip
 hdparm
 higan
 ifuse
+imagemagick
 inetutils
 intel-ucode
 iproute2
@@ -218,6 +219,7 @@ xorg-server
 xorg-xev
 xorg-xinit
 xorg-xrandr
+xorg-xwininfo
 yajl
 yaourt
 yarn
