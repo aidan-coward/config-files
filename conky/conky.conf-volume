@@ -28,7 +28,11 @@ ${endif} \
 ^fg(\#ff007f)${exec cmus-remote -Q 2>/dev/null | grep position | cut -c10- | xargs /home/aidan/.config/conky/time-convert.py}/\
 ^fg(\#ff007f)${exec cmus-remote -Q 2>/dev/null | grep duration | cut -c10- | xargs /home/aidan/.config/conky/time-convert.py} | \
 ${endif}\
-^fg(\#eee8d5)${exec bash /home/aidan/.config/conky/cpu-voltage.sh}| \
+- ^fg(\#6495ed)vol: \
+- ${if_match "${exec amixer -c 0 get Master |grep Mono: | cut -c3- | cut -d' ' -f6 | cut -c2-3}" == "on"}\
+- ${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6 | cut -c1-6} | \
+- ${else}[MM] | \
+- ${endif}\
 ^fg(\#b58900)${exec sensors | sed -n '3p' | cut -c16-22} | \
 ^fg(\#2aa198)${exec sensors | sed -n '10p' | cut -c16-22} | \
 ^fg(\#839496)CPU ${cpu cpu0} | \
