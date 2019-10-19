@@ -18,6 +18,7 @@ xbindkeys
 # enables numlock automatically 
 numlockx &
 # dual monitor setup
-xrandr --output LVDS1 --auto --output VGA1 --auto --right-of LVDS1
+#xrandr --output HDMI-A-0 --auto --rate 59.94 --output DVI-D-0 --auto --right-of HDMI-A-0
+xrandr --output DVI-D-0 --auto --output HDMI-A-0 --auto --rate 59.94 --left-of DVI-D-0
 # start xmonad
 exec xmonad 

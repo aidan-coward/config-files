@@ -12,6 +12,7 @@
 # Directory listing/navigation
 alias l='ls --color=auto'  # colors output 
 alias la='ls --color=auto -liha | less'  # colors output and gives extra deetz
+alias lat='ls --color=auto -lihat | less'  # colors output, gives extra deetz and sorts by modification date
 alias PS1='[\u@\h \W]\$ '
 alias ..='cd ..'
 alias rmd='rm -r'
@@ -23,15 +24,21 @@ alias lsblk='lsblk -o NAME,MAJ:MIN,RM,SIZE,RO,TYPE,FSTYPE,MOUNTPOINT,UUID'
 alias xel='grep EE /home/aidan/.local/share/xorg/Xorg.0.log'
 alias xl='less /home/aidan/.local/share/xorg/Xorg.0.log'
 alias cdir='ls -1 | wc -l'
+alias adiff='diff --side-by-side --left-column'
+alias fless='less +F'
 function mkcd
 {
   command mkdir -p $1 && cd $1
 }
 
 # pacman shorthands
-alias aurget='yaourt'
+function aget 
+{ 
+  command cd /home/aidan/abs/ && command git clone https://aur.archlinux.org/"$1".git && command cd "$1"
+}
+
 alias get='sudo pacman -Syu --needed'
-alias up='sudo pacman -Syu; rustup update; yaourt -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt'
+alias up='sudo pacman -Syu; rustup update; yay -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt'
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
@@ -48,8 +55,8 @@ alias reboot='systemctl reboot'
 # setsid commonly used programs
 alias gimp='setsid gimp'
 alias thunderbird='setsid thunderbird'
-alias evince='setsid evince'
 alias ch='setsid chromium; exit'
+alias chi='setsid chromium -incognito; exit'
 alias calc='setsid gnome-calculator; exit'
 alias vlc='setsid vlc'
 alias geany='setsid geany'
@@ -60,7 +67,6 @@ alias lk='setsid luakit; exit'
 alias audacity='setsid audacity; exit'
 alias xournal='setsid xournal'
 alias mtpaint='setsid mtpaint'
-alias lol='DRI_PRIME=1 setsid playonlinux'
 alias asteam='LANG=en_US.UTF-8 DRI_PRIME=1 steam'
 alias ksteam='sudo pkill steam'
 alias qt='setsid qutebrowser'
@@ -68,6 +74,9 @@ alias g='DRI_PRIME=1'
 alias openttd='setsid openttd'
 alias calibre='setsid calibre'
 alias virtualbox='setsid virtualbox'
+function evince
+{ command setsid evince $1; exit
+}
 
 
 # systemd 
@@ -79,7 +88,11 @@ alias disable='sudo systemctl disable'
 alias sus='sudo systemctl suspend'
 
 # other stuff
-alias fl='wine "/home/aidan/.wine/drive_c/Program Files (x86)/FL Studio 12/FL.exe"'
+alias cmus='cd /home/aidan/media/music; cmus'
+# old alias
+#alias fl='wine "/home/aidan/.wine/drive_c/Program Files (x86)/FL Studio 12/FL.exe"'
+# new alias
+alias fl='wine "/home/aidan/.wine/drive_c/Program\ Files\ \(x86\)/Image-Line/FL\ Studio\ 12/FL.exe"'
 alias syn='wine "/home/aidan/.wine/drive_c/Program Files (x86)/Syntorial/Syntorial.exe"'
 alias time='timedatectl'
 alias nu='setsid nuvolaplayer; setsid urxvt; exit'
@@ -108,10 +121,11 @@ alias wd='sudo ip link set wlp9s0 down'
 alias mtag='id3v2'
 alias pc='curl -F c=@- http://ix.io'
 alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
-alias mage-client='wmname LG3D; mage-client'
+alias mc='wmname LG3D; setsid mage-client'
+alias mcb='wmname LG3D; setsid mage-client-beta'
 alias xmage='wmname LG3D; setsid mage-client; setsid mage-server'
 alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
-alias rtp="setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty stop undef; stty start undef; screen -r rtorrent-torrentday' &; setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent' & ; exit"
+alias rtp='setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty stop undef; stty start undef ; screen -r rtorrent-torrentday" & ; setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty start undef ; stty stop undef ; screen -r rtorrent" & ; exit'
 
 #####
 # Git
@@ -191,7 +205,7 @@ stty start undef
 #---------------------
 
 alias metroid='cd /home/aidan/media/games/snes/chrono-trigger/; ./snes9x-gtk super-metroid.smc'
-alias terraria='DRI_PRIME=1 /home/aidan/"GOG Games"/Terraria/start.sh'
+alias terraria='bash /home/aidan/"GOG Games"/Terraria/start.sh'
 
 
 

@@ -1,19 +1,4 @@
 {
-  "viewer_toolbar_state": {
-    "__class__": "bytearray", 
-    "__value__": "AAAA/wAAAAH9AAAAAAAABRkAAALWAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAAAAAAEAAAAQAHQAbwBvAGwAXwBiAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAASAHQAbwBvAGwAXwBiAGEAcgAyAQAAAAD/////AAAAAAAAAAA="
-  }, 
-  "viewer_toc_isvisible": false, 
-  "main_window_state": {
-    "__class__": "bytearray", 
-    "__value__": "AAAA/wAAAAL9AAAAAwAAAAAAAAAAAAAAAPwCAAAAAfsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIgA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABwAYgBvAG8AawBtAGEAcgBrAHMALQBkAG8AYwBrAAAAAAD/////AAAAzQD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABmAG8AbwB0AG4AbwB0AGUAcwAtAGQAbwBjAGsAAAAAAP////8AAAA6AP///wAAAeMAAAFKAAAAAQAAAAIAAAABAAAAAvwAAAACAAAAAAAAAAEAAAAQAHQAbwBvAGwAXwBiAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAASAHQAbwBvAGwAXwBiAGEAcgAyAQAAAAD/////AAAAAAAAAAA="
-  }, 
-  "in_paged_mode": true, 
-  "viewer_window_geometry": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAMzAAAAFQAABVUAAAGJAAADNQAAABcAAAVTAAABhwAAAAAAAAAABVY="
-  }, 
-  "multiplier": 1.0, 
   "custom_colors_for_color_dialog": [
     [
       255, 
@@ -112,7 +97,14 @@
       255
     ]
   ], 
+  "in_paged_mode": true, 
+  "main_window_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAL9AAAAAwAAAAAAAAAAAAAAAPwCAAAAAfsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIgA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABwAYgBvAG8AawBtAGEAcgBrAHMALQBkAG8AYwBrAAAAAAD/////AAAAzQD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABmAG8AbwB0AG4AbwB0AGUAcwAtAGQAbwBjAGsAAAAAAP////8AAAA6AP///wAABMQAAAPEAAAAAQAAAAIAAAABAAAAAvwAAAACAAAAAAAAAAEAAAAQAHQAbwBvAGwAXwBiAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAASAHQAbwBvAGwAXwBiAGEAcgAyAQAAAAD/////AAAAAAAAAAA="
+  }, 
+  "multiplier": 1.0, 
   "viewer_open_history": [
+    "/home/aidan/media/books/Calibre Library/Kim Stanley Robinson/New York 2140 (2)/New York 2140 - Kim Stanley Robinson.epub", 
     "/home/aidan/media/books/Calibre Library/The Rust Team/The Rust Programming Language (1)/The Rust Programming Language - The Rust Team.epub", 
     "/home/aidan/media/books/Calibre Library/Margaret Atwood/Alias Grace (8)/Alias Grace - Margaret Atwood.mobi", 
     "/home/aidan/media/books/Calibre Library/Margaret Shepherd/Learn Calligraphy (7)/Learn Calligraphy - Margaret Shepherd.epub", 
@@ -121,5 +113,14 @@
     "/home/aidan/media/books/Calibre Library/Axis/Robert Charles Wilson - Spin 02 (4)/Robert Charles Wilson - Spin 02 - Axis.epub", 
     "/home/aidan/media/books/Calibre Library/Garth Nix (TwisTtheTwiTcH)/The Seventh Tower . . Volumes 4-6 (3)/The Seventh Tower . . Volumes 4-6 - Garth Nix (TwisTtheTwiTcH).epub", 
     "/home/aidan/media/books/Calibre Library/Garth Nix (TwisTtheTwiTcH)/The Seventh Tower . . Volumes 1-3 (2)/The Seventh Tower . . Volumes 1-3 - Garth Nix (TwisTtheTwiTcH).epub"
-  ]
+  ], 
+  "viewer_toc_isvisible": false, 
+  "viewer_toolbar_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAH9AAAAAAAABRkAAALWAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAAAAAAEAAAAQAHQAbwBvAGwAXwBiAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAASAHQAbwBvAGwAXwBiAGEAcgAyAQAAAAD/////AAAAAAAAAAA="
+  }, 
+  "viewer_window_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAeAAAAAFQAADH8AAAP/AAAHgAAAABUAAAx/AAAD/wAAAAEAAAAABQAAAAeAAAAAFQAADH8AAAP/"
+  }
 }

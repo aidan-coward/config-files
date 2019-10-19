@@ -6,10 +6,10 @@ xmonad.hs:237:13: warning: [-Wtabs]
 237 |     , title     =? "urxvtlauncher"  --> doFloat
     |             ^^^^
 
-xmonad.hs:309:12: warning: [-Wdeprecations]
+xmonad.hs:311:12: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
     |
-309 | defaults = defaultConfig {
+311 | defaults = defaultConfig {
     |            ^^^^^^^^^^^^^

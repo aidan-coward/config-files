@@ -181,7 +181,7 @@
   ], 
   "duplicates-question-dialog-geometry": {
     "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAGQAAAAowAAA60AAAIZAAABkgAAAKUAAAOrAAACFwAAAAAAAAAABVY="
+    "__value__": "AdnQywADAAAAAAKlAAABPwAABMIAAAK5AAACpwAAAUEAAATAAAACtwAAAAAAAAAAB4AAAAKnAAABQQAABMAAAAK3"
   }, 
   "grid view visible": false, 
   "jobs view column layout3": {
@@ -193,7 +193,7 @@
     "__value__": "AdnQywACAAAAAAFlAAAAUwAAA90AAAJwAAABZwAAAFUAAAPbAAACbgAAAAAAAAAABVY="
   }, 
   "library_usage_stats": {
-    "/home/aidan/media/books/Calibre Library": 31
+    "/home/aidan/media/books/Calibre Library": 43
   }, 
   "memory_view books view state": {
     "column_alignment": {

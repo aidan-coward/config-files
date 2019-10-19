@@ -253,7 +253,8 @@ myEventHook = mempty
 ------------------------------------------------------------------------
 -- Status bars and logging
 
-myStatusBar = "conky -c /home/aidan/.config/conky/conky.conf | dzen2 -dock -xs 1 -ta r" 
+myStatusBar1 = "conky -c /home/aidan/.config/conky/conky.conf | dzen2 -dock -xs 1 -ta r" 
+myStatusBar2 = "conky -c /home/aidan/.config/conky/conky.conf | dzen2 -dock -xs 2 -ta r" 
 --myTopBar = "conky | dzen2 -xs 2 -ta r" 
 myTopBar = "urxvt"
 
@@ -284,8 +285,8 @@ myStartupHook = do
 	spawnOn "[" "qutebrowser"
 	spawnOn "[" "urxvt"
 	spawnOn "%" "urxvt -e weechat"
-	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent-torrentday'" 
-	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'screen -r rtorrent'" 
+	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent-torrentday'" 
+	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent'" 
 
 
 
@@ -296,7 +297,8 @@ myStartupHook = do
 --
 --main = xmonad defaults
 main = do
-    dzenbar <- spawnPipe myStatusBar
+    dzenbar1 <- spawnPipe myStatusBar1
+    dzenbar2 <- spawnPipe myStatusBar2
     --dzentopbar <- spawnPipe myTopBar
     xmonad $ docks defaults
     
