@@ -46,10 +46,11 @@ carla
 ccache
 chromium
 chuck
+clinfo
 cmake
 cmt
 cmus-git
-conky
+conky-git
 coreutils
 cryptsetup
 csound
@@ -146,6 +147,7 @@ jfsutils
 jnoisemeter
 jsampler
 kxstitch
+leela-zero
 less
 lib32-alsa-lib
 lib32-cairo
@@ -174,6 +176,7 @@ linux
 linuxsampler
 lmms
 logrotate
+lshw
 lsp-plugins
 luppp
 lv2file
@@ -259,6 +262,7 @@ qsynth
 qtractor
 qutebrowser
 qxgedit
+rasdaemon
 realtime-privileges
 reiserfsprogs
 rev-plugins
@@ -272,6 +276,7 @@ s-nail
 samba
 samplv1
 sc3-plugins
+screen
 sed
 setbfree
 shadow
@@ -363,7 +368,6 @@ yajl
 yaourt
 yarn
 yass
-yay
 yoshimi
 youtube-dl
 zam-plugins

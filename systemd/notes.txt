@@ -1,0 +1,7 @@
+to make service run after network is up add after [Unit]
+	After=network.target
+	
+to make it fork to background change 
+	Type=simple
+	to 
+	Type=forking 

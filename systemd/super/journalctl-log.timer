@@ -1,0 +1,9 @@
+[Unit]
+Description=pipe journalctl output to file once every hour
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h 
+
+[Install]
+WantedBy=timers.target

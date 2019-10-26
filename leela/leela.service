@@ -1,0 +1,10 @@
+[Unit]
+Description=starts leela-zero
+After=network.target
+
+[Service]
+ExecStart=/home/aidan/.config/leela/leela-service.sh
+Type=forking
+
+[Install]
+WantedBy=default.target

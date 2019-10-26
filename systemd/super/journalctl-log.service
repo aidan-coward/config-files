@@ -1,0 +1,9 @@
+[Unit]
+Description=pipe journalctl output to file once every hour
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/aidan/.config/systemd/super/journalctl-log.sh
+
+[Install]
+WantedBy=multi-user.target
