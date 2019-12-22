@@ -1,0 +1,15 @@
+game:
+  exe: /home/aidan/Games/league-of-legends/drive_c/Riot Games/League of Legends/LeagueClient.exe
+  prefix: /home/aidan/Games/league-of-legends
+system:
+  disable_compositor: true
+  env:
+    DXVK_LOG_LEVEL: none
+    DXVK_STATE_CACHE_PATH: /home/aidan/Games/league-of-legends
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /home/aidan/Games/league-of-legends
+  prelaunch_command: /home/aidan/Games/league-of-legends/syscall_check.sh
+wine:
+  MouseWarpOverride: enable
+  d9vk: true
+  version: lutris-lol-4.17-x86_64

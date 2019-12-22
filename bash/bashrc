@@ -26,9 +26,14 @@ alias xl='less /home/aidan/.local/share/xorg/Xorg.0.log'
 alias cdir='ls -1 | wc -l'
 alias adiff='diff --side-by-side --left-column'
 alias fless='less +F'
+alias lw='setsid libreoffice --writer'
 function mkcd
 {
   command mkdir -p $1 && cd $1
+}
+function xd
+{
+	command cd /home/aidan/abs/xmage && wget $1 && sha256sum "$(basename $1)"
 }
 
 # pacman shorthands
@@ -62,6 +67,7 @@ alias vlc='setsid vlc'
 alias geany='setsid geany'
 alias fbreader='setsid FBReader'
 alias term='setsid urxvt'
+alias terme='setsid urxvt;exit'
 alias gedit='setsid gedit'
 alias lk='setsid luakit; exit'
 alias audacity='setsid audacity; exit'
@@ -128,6 +134,7 @@ alias xmage='wmname LG3D; setsid mage-client; setsid mage-server'
 alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
 alias rtp='setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty stop undef; stty start undef ; screen -r rtorrent-torrentday" & ; setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty start undef ; stty stop undef ; screen -r rtorrent" & ; exit'
 alias yt='youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"'
+alias sl='screen -r leela'
 
 #####
 # Git
@@ -207,7 +214,7 @@ stty start undef
 #---------------------
 
 alias metroid='cd /home/aidan/media/games/snes/chrono-trigger/; ./snes9x-gtk super-metroid.smc'
-alias terraria='bash /home/aidan/"GOG Games"/Terraria/start.sh'
+alias terraria='echo "copying world/player files"; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/ && bash /home/aidan/"GOG Games"/Terraria/start.sh; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/'
 
 
 

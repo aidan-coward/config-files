@@ -14,6 +14,8 @@ amd-ucode
 ams
 ams-lv2
 amsynth
+android-tools
+arch-wiki-docs
 archlinux-keyring
 ardour
 arp-scan
@@ -66,6 +68,7 @@ din
 distcc
 dmidecode
 dolphin-emu
+dos2unix
 dpf-plugins
 dragonfly-reverb
 drumgizmo
@@ -147,6 +150,8 @@ jfsutils
 jnoisemeter
 jsampler
 kxstitch
+latex2html
+latex2rtf
 leela-zero
 less
 lib32-alsa-lib
@@ -224,6 +229,7 @@ package-query
 pacman
 pacman-contrib
 padthv1
+pandoc
 patch
 patchmatrix
 patroneo
@@ -246,6 +252,7 @@ python-guessit
 python-ntlm-auth
 python-path.py
 python-plumbum
+python-pyserial
 python-zc.lockfile
 python-zxcvbn
 python2-flask-cors
@@ -342,6 +349,8 @@ weechat
 wget
 which
 wine
+wine-lol
+wine-lol-glibc
 wine-mono
 wine_gecko
 winetricks
@@ -368,6 +377,7 @@ yajl
 yaourt
 yarn
 yass
+yay
 yoshimi
 youtube-dl
 zam-plugins

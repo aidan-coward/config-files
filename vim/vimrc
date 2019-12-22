@@ -81,8 +81,13 @@ set iskeyword+=:
 autocmd FileType tex setlocal spell spelllang=en_ca,fr
 
 " compile automatically on save of a .tex or .utex file
+" note that vim expands % to the current filename with extension 
+" and %< to the current file without extension
 " autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
-autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | execute "!biber % >/dev/null 2>&1" | execute "!pdflatex % >/dev/null 2>&1" | redraw!
+"autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | execute "!biber % >/dev/null 2>&1" | execute "!pdflatex % >/dev/null 2>&1" | redraw!
+
+autocmd BufWritePost *.tex silent! execute "!pdflatex %" | execute "!biber %< " | execute "!pdflatex % >/dev/null 2>&1" | redraw!
+
 autocmd BufWritePost *.utex silent! execute "!pdflatex % >/dev/null 2>&1; !biber % >/dev/null 2>&1; !pdflatex % >/dev/null 2>&1" | redraw!
 
 

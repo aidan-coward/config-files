@@ -62,7 +62,9 @@ c.url.searchengines = {
         "th": "https://www.thesaurus.com/browse/{}",
         "way": "http://web.archive.org/web/*/{}",
         "sw": "https://stardewvalleywiki.com/{}",
-        "rg": "https://genius.com/search?q={}"
+        "rg": "https://genius.com/search?q={}",
+        "ls": "http://libgen.is/scimag/?q={}",
+        "lb": "http://libgen.is/search.php?req={}",
 
         }
 
