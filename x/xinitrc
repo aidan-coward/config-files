@@ -20,5 +20,13 @@ numlockx &
 # dual monitor setup
 #xrandr --output HDMI-A-0 --auto --rate 59.94 --output DVI-D-0 --auto --right-of HDMI-A-0
 xrandr --output DVI-D-0 --auto --output HDMI-A-0 --auto --rate 59.94 --left-of DVI-D-0
+
+# start ssh-agent if it is not already running
+if [[ -z "$(pgrep -u aidan ssh-agent)" ]]; then
+	/usr/bin/ssh-agent
+else
+	echo "no doot"
+fi
+
 # start xmonad
 exec xmonad 

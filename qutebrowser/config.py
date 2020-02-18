@@ -65,6 +65,8 @@ c.url.searchengines = {
         "rg": "https://genius.com/search?q={}",
         "ls": "http://libgen.is/scimag/?q={}",
         "lb": "http://libgen.is/search.php?req={}",
+        "lf": "http://libgen.is/fiction/?q={}",
+        "dc": "https://deadcells.gamepedia.com/index.php?search={}&title=Special%3ASearch&go=Go",
 
         }
 

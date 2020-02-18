@@ -1,19 +1,63 @@
+video
+  driver:XShm
+  monitor:Primary
+  format:ARGB24
+  exclusive:true
+  blocking:false
+  flush:false
+  luminance:1.0
+  saturation:1.0
+  gamma:1.0
+  output:Center
+  aspectCorrection:true
+  scale:2
+  shader:Blur
+audio
+  driver:ALSA
+  device:null
+  frequency:48000
+  latency:20
+  exclusive:false
+  blocking:true
+  dynamic:false
+  skew:0
+  volume:1.0
+  balance:0.0
+  mute:false
+input
+  driver:udev
+  unfocused:Block
+interface
+  showStatusBar:true
+  showSystemPanels:true
+  advancedMode:false
+hotkeys
+  toggleStatus
+  togglePanels
+  toggleFullscreen
+  toggleMouseCapture
+  fastForward
+  saveState
+  loadState
+  incrementStateSlot
+  decrementStateSlot
+  pauseEmulation
+  quitEmulator
+UserInterface
+  ShowStatusBar:true
+Library
+  Location:/home/aidan/Emulation/
+  IgnoreManifests:false
 Video
-  Driver: OpenGL
-  Synchronize: false
-  Shader: Blur
-  ScaleMode: 0
-  AspectCorrection: true
-  ColorEmulation: true
-  MaskOverscan: false
-    Horizontal: 8
-    Vertical: 8
+  Driver:XShm
+  Synchronize:false
+  Shader:Blur
+  BlurEmulation:true
+  ColorEmulation:true
+  ScanlineEmulation:false
   Saturation:100
   Gamma:100
   Luminance:100
-  StartFullScreen: false
-  BlurEmulation:true
-  ScanlineEmulation:false
   Overscan
     Horizontal:0
     Vertical:0
@@ -21,7 +65,7 @@ Video
     AspectCorrection:true
     IntegralScaling:true
     Adaptive:true
-    Scale:Small
+    Scale:Medium
       Small:640x480
       Medium:960x720
       Large:1280x960
@@ -30,42 +74,23 @@ Video
     IntegralScaling:true
     Exclusive:false
 Audio
-  Driver: ALSA
-  Synchronize: true
-  Frequency: 48000
-  Latency: 60
-  Resampler: 0
-  Volume:100
-  Mute: false
-  Device:null
+  Driver:ALSA
+  Device:default:CARD=CODEC
+  Frequency:48000
+  Latency:20
   Exclusive:false
+  Synchronize:true
+  Mute:false
+  Volume:30
   Balance:50
   Reverb
     Enable:false
 Input
-  Driver: udev
-  Focus
-    Pause: true
-    AllowInput: false
+  Driver:udev
   Frequency:5
   FocusLoss
     Pause:false
-    AllowInput:false
-Timing
-  Video: 60.0
-  Audio: 48000.0
-Server
-  Hostname: 
-  Username: 
-  Password: 
-Library
-  Selection: 0
-  MediaMode: 0
-  ShowOnStartup: true
-  Location:/home/aidan/Emulation/
-  IgnoreManifests:false
-UserInterface
-  ShowStatusBar:true
+    AllowInput:true
 Emulation
   AutoSaveMemory
     Enable:true
@@ -74,13 +99,13 @@ Crashed:false
 Famicom
   ControllerPort1
     Gamepad
-      Up
-      Down
-      Left
-      Right
-      B
-      A
-      Select
+      Up:0xf7e78e1c046dc21d/1/1/Lo
+      Down:0xf7e78e1c046dc21d/1/1/Hi
+      Left:0xf7e78e1c046dc21d/1/0/Lo
+      Right:0xf7e78e1c046dc21d/1/0/Hi
+      B:0xf7e78e1c046dc21d/3/0
+      A:0xf7e78e1c046dc21d/3/1
+      Select:0xf7e78e1c046dc21d/3/6
       Start
   ControllerPort2
     Gamepad
@@ -93,20 +118,20 @@ Famicom
       Select
       Start
 SuperFamicom
-  ControllerPort1
+  ControllerPort1:Gamepad
     Gamepad
-      Up
-      Down
-      Left
-      Right
-      B
-      A
-      Y
-      X
-      L
-      R
-      Select
-      Start
+      Up:0xf7e78e1c046dc21d/1/1/Lo
+      Down:0xf7e78e1c046dc21d/1/1/Hi
+      Left:0xf7e78e1c046dc21d/1/0/Lo
+      Right:0xf7e78e1c046dc21d/1/0/Hi
+      B:0xf7e78e1c046dc21d/3/0
+      A:0xf7e78e1c046dc21d/3/1
+      Y:0xf7e78e1c046dc21d/3/2
+      X:0xf7e78e1c046dc21d/3/3
+      L:0xf7e78e1c046dc21d/3/4
+      R:0xf7e78e1c046dc21d/3/5
+      Select:0xf7e78e1c046dc21d/3/6
+      Start:0xf7e78e1c046dc21d/3/7
     Mouse
       X-axis
       Y-axis
@@ -375,8 +400,8 @@ WonderSwanColor
 Hotkey
   ToggleFullscreen
   ToggleMouseCapture
-  SaveQuickState
-  LoadQuickState
+  SaveQuickState:0x1/0/99
+  LoadQuickState:0x1/0/92
   DecrementQuickState
   IncrementQuickState
   PauseEmulation

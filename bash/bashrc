@@ -43,7 +43,7 @@ function aget
 }
 
 alias get='sudo pacman -Syu --needed'
-alias up='sudo pacman -Syu; rustup update; yay -Syua; sudo paccache -r -k 3; pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt'
+alias up='sudo pacman -Syu; rustup update; yay -Syua; sudo paccache -r -k 3; setsid xmonad --recompile ;pacman -Qqe > /home/aidan/.config/$(hostname)-current-packages.txt; sleep 5; echo '
 alias remove='sudo pacman -R'
 alias aids='echo aidan'
 alias install='sudo pacman -U'
@@ -213,7 +213,7 @@ stty start undef
 # Games
 #---------------------
 
-alias metroid='cd /home/aidan/media/games/snes/chrono-trigger/; ./snes9x-gtk super-metroid.smc'
+alias metroid='cd /home/aidan/media/games/snes/super-metroid; setsid higan "Super Metroid (Japan, USA) (En,Ja).sfc"'
 alias terraria='echo "copying world/player files"; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/ && bash /home/aidan/"GOG Games"/Terraria/start.sh; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/'
 
 

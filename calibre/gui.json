@@ -75,7 +75,7 @@
   }, 
   "convert_single_dialog_geom": {
     "__class__": "bytearray", 
-    "__value__": "AdnQywADAAAAAAAAAAAAFQAABVUAAAL/AAAAAAAAABUAAAVVAAAC/wAAAAAAAAAABVYAAAAAAAAAFQAABVUAAAL/"
+    "__value__": "AdnQywADAAAAAAf2AAAAhAAAC/UAAAM/AAAH+AAAAIYAAAvzAAADPQAAAAEAAAAABQAAAAf4AAAAhgAAC/MAAAM9"
   }, 
   "cover_browser_splitter_vertical_state": [
     false, 
@@ -193,7 +193,7 @@
     "__value__": "AdnQywACAAAAAAFlAAAAUwAAA90AAAJwAAABZwAAAFUAAAPbAAACbgAAAAAAAAAABVY="
   }, 
   "library_usage_stats": {
-    "/home/aidan/media/books/Calibre Library": 51
+    "/home/aidan/media/books/Calibre Library": 58
   }, 
   "memory_view books view state": {
     "column_alignment": {
