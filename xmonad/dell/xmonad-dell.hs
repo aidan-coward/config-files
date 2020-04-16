@@ -284,7 +284,7 @@ myStartupHook = do
 	spawnOn "%" "qutebrowser www.hypem.com messenger.com gmail.com "
 	spawnOn "[" "qutebrowser"
 	spawnOn "[" "urxvt"
-	spawnOn "%" "urxvt -e weechat"
+	--spawnOn "%" "urxvt -e weechat"
 	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent-torrentday'" 
 	spawnOn "=" "urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t 'stty start undef; stty stop undef; screen -r rtorrent'" 
 

@@ -128,7 +128,7 @@ gulp
 gvfs-afc
 gzip
 hdparm
-helm
+helm-synth
 hexter
 higan
 hub
@@ -184,6 +184,7 @@ logrotate
 lshw
 lsp-plugins
 luppp
+lutris
 lv2file
 lvm2
 lynx
@@ -195,17 +196,18 @@ marsyas
 mcp-plugins
 mda.lv2
 mdadm
-megatools
 meterbridge
 midi_matrix.lv2
 minuet
 mixxx
 mlocate
+mono
 moony.lv2
 mplayer
 mpv
 msmtp
 msmtp-mta
+mtools
 mtpaint
 n-ninja
 namcap
@@ -250,7 +252,7 @@ pvoc
 python-contextlib2
 python-guessit
 python-ntlm-auth
-python-path.py
+python-path
 python-plumbum
 python-pyserial
 python-zc.lockfile
@@ -326,7 +328,6 @@ texlive-science
 thunderbird
 timidity++
 tmux
-tor-browser
 traceroute
 tree
 ttf-amiri
@@ -391,4 +392,5 @@ zita-lrx
 zita-mu1
 zita-njbridge
 zita-rev1
+zoom
 zynaddsubfx

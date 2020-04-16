@@ -25,6 +25,10 @@ config.unbind('j')
 config.bind('k', 'scroll-page 0 -0.05')
 config.bind('j', 'scroll-page 0 0.05')
 
+# scp for files
+#config.bind(',td', 'hint links download --dest /tmp/')
+config.bind(',td', 'spawn --userscript scp-dl.sh')
+        
 # open quickmark with go
 #config.unbind('go', mode='normal') 
 #config.bind('go','set-cmd-text --space :quickmark-load')
@@ -67,6 +71,8 @@ c.url.searchengines = {
         "lb": "http://libgen.is/search.php?req={}",
         "lf": "http://libgen.is/fiction/?q={}",
         "dc": "https://deadcells.gamepedia.com/index.php?search={}&title=Special%3ASearch&go=Go",
+        "h": "https://hypem.com/search/{}/1/",
+        "ftw": "https://ftl.fandom.com/wiki/Special:Search?query={}",
 
         }
 
@@ -75,8 +81,7 @@ c.url.searchengines = {
 c.editor.command = ["urxvt", "-e", "vim", "{}"]
 
 c.aliases = {
-        "m": "open -t gmail.com"
-        }
+                }
 
 # increase font size - default is 16
 # change fonts

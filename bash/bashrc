@@ -27,6 +27,7 @@ alias cdir='ls -1 | wc -l'
 alias adiff='diff --side-by-side --left-column'
 alias fless='less +F'
 alias lw='setsid libreoffice --writer'
+alias cdd='cd /home/aidan/.config'
 function mkcd
 {
   command mkdir -p $1 && cd $1
@@ -130,7 +131,7 @@ alias pc='curl -F c=@- http://ix.io'
 alias p='bash /home/aidan/.config/scripts/pdf-dl.sh'
 alias mc='wmname LG3D; setsid mage-client'
 alias mcb='wmname LG3D; setsid mage-client-beta'
-alias xmage='wmname LG3D; setsid mage-client; setsid mage-server'
+alias xmage='wmname LG3D; setsid mage-client'
 alias wifi='sudo pkill dhcpcd && sudo pkill wpa_supplicant; sudo wifi-menu'
 alias rtp='setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty stop undef; stty start undef ; screen -r rtorrent-torrentday" & ; setsid urxvt -e ssh -i /home/aidan/.ssh/id_rsa_alarm aidan@192.168.2.160 -t "stty start undef ; stty stop undef ; screen -r rtorrent" & ; exit'
 alias yt='youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"'
@@ -177,7 +178,7 @@ alias org='ln -s /home/aidan/flash/flixel/org'
 # ssh
 alias sj='ssh aidan@192.168.2.39'
 alias sx='ssh aidan@192.168.2.34'
-alias st='ssh aidan@192.168.2.160'
+alias st='ssh -i .ssh/id_rsa_alarm aidan@192.168.2.160'
 alias sm='ssh maisy@192.168.2.162'
 
 
@@ -215,7 +216,8 @@ stty start undef
 
 alias metroid='cd /home/aidan/media/games/snes/super-metroid; setsid higan "Super Metroid (Japan, USA) (En,Ja).sfc"'
 alias terraria='echo "copying world/player files"; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/ && bash /home/aidan/"GOG Games"/Terraria/start.sh; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/'
-
+alias ftl='bash "/home/aidan/GOG Games/FTL Advanced Edition/start.sh"'
+alias breach='cd "/home/aidan/.wine/drive_c/GOG Games/Into the Breach/"; wine Breach.exe'
 
 
 alias keys="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"

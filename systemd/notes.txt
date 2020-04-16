@@ -5,3 +5,5 @@ to make it fork to background change
 	Type=simple
 	to 
 	Type=forking 
+
+journalctl shouldn't need a timer

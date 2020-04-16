@@ -23,10 +23,11 @@ xrandr --output DVI-D-0 --auto --output HDMI-A-0 --auto --rate 59.94 --left-of D
 
 # start ssh-agent if it is not already running
 if [[ -z "$(pgrep -u aidan ssh-agent)" ]]; then
-	/usr/bin/ssh-agent
+	eval $(/usr/bin/ssh-agent)
 else
 	echo "no doot"
 fi
 
 # start xmonad
 exec xmonad 
+
