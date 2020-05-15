@@ -21,6 +21,9 @@ import XMonad.Layout.NoBorders
 -- this is to be able to start programs in specific workspaces
 import XMonad.Actions.SpawnOn
 
+-- try to make unity games work
+import XMonad.Hooks.EwmhDesktops(fullscreenEventHook,ewmh)
+
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
@@ -300,7 +303,7 @@ main = do
     dzenbar1 <- spawnPipe myStatusBar1
     dzenbar2 <- spawnPipe myStatusBar2
     --dzentopbar <- spawnPipe myTopBar
-    xmonad $ docks defaults
+    xmonad $ ewmh $ docks defaults
     
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will

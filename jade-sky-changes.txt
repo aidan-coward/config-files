@@ -1,0 +1,4 @@
+to try and stop random reboots/freezes(03-05-2020)
+added processor.max_cstate=5 to boot line in /boot/grub/grub.cfg 
+see https://wiki.gentoo.org/wiki/Ryzen#Random_reboots_with_mce_events
+or https://bbs.archlinux.org/viewtopic.php?id=233304

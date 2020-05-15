@@ -1,6 +1,6 @@
 wget command is 
-	wget --load-cookies=cookie.txt %url-page%
-	must run this in json-files dir
+	wget --load-cookies=cookies.txt %url-page%
+	must run this in files dir
 	
 format: 
 https://hypem.com/playlist/loved/aidonius/json/21/data.js

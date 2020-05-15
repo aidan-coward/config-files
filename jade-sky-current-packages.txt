@@ -77,10 +77,12 @@ dzen2
 e2fsprogs
 ebumeter
 ecasound
+efibootmgr
 eog
 eq10q
 eteroj.lv2
 evince
+exo
 expac
 extundelete
 fabla
@@ -91,6 +93,7 @@ file
 filesystem
 findutils
 flashrom
+flatpak
 flex
 flexget
 fluajho
@@ -100,6 +103,7 @@ foxdot
 freewheeling
 fuseiso
 g2reverb
+garcon
 gawk
 gcc
 gcc-libs
@@ -189,6 +193,7 @@ lv2file
 lvm2
 lynx
 m4
+m64py
 make
 man-db
 man-pages
@@ -224,6 +229,9 @@ ntfs-3g
 ntp
 openbox
 openssh
+openttd
+openttd-opengfx
+openttd-opensfx
 opnplug
 osc2midi
 osmid
@@ -243,6 +251,7 @@ pdfjs
 pepper-flash
 perl
 pkgconf
+playonlinux
 pmount
 pocketsphinx
 polyphone
@@ -254,6 +263,7 @@ python-guessit
 python-ntlm-auth
 python-path
 python-plumbum
+python-pysdl2
 python-pyserial
 python-zc.lockfile
 python-zxcvbn
@@ -325,6 +335,8 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+thunar
+thunar-volman
 thunderbird
 timidity++
 tmux
@@ -333,6 +345,7 @@ tree
 ttf-amiri
 ttf-bitstream-vera
 ttf-liberation
+tumbler
 unoconv
 unzip
 urn-git
@@ -358,13 +371,25 @@ wine-lol-glibc
 wine-mono
 winetricks
 wmname
+woeusb-git
 wolf-shaper
 wolf-spectrum
 wpa_supplicant
 x42-plugins
 xbindkeys
+xdotool
 xf86-video-amdgpu
+xfce4-appfinder
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfconf
+xfdesktop
 xfsprogs
+xfwm4
+xfwm4-themes
 xmage
 xmage-beta
 xmonad

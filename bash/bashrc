@@ -218,6 +218,9 @@ alias metroid='cd /home/aidan/media/games/snes/super-metroid; setsid higan "Supe
 alias terraria='echo "copying world/player files"; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/ && bash /home/aidan/"GOG Games"/Terraria/start.sh; cp -r /home/aidan/.local/share/Terraria/Players /home/aidan/.local/share/Terraria/Worlds /home/aidan/.config/Terraria/'
 alias ftl='bash "/home/aidan/GOG Games/FTL Advanced Edition/start.sh"'
 alias breach='cd "/home/aidan/.wine/drive_c/GOG Games/Into the Breach/"; wine Breach.exe'
+alias celeste='xset -dpms; xset s off; cd "/home/aidan/media/games/pc/Celeste.v1.3.1.2/"; wine Celeste.exe'
+alias hollow='xset -dpms; xset s off; cd "/home/aidan/media/games/pc/GOG Games/Hollow Knight/" ; bash start.sh'
+alias spelunky='xset -dpms; xset s off; cd "/home/aidan/.wine/drive_c/GOG Games/Spelunky/"; wine Spelunky.exe;xrandr --output DVI-D-0 --auto --output HDMI-A-0 --auto --rate 59.94 --left-of DVI-D-0'
 
 
 alias keys="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"

@@ -1,15 +1,15 @@
 
-xmonad.hs:237:13: warning: [-Wtabs]
+xmonad.hs:240:13: warning: [-Wtabs]
     Tab character found here, and in six further locations.
     Please use spaces instead.
     |
-237 |     , title     =? "urxvtlauncher"  --> doFloat
+240 |     , title     =? "urxvtlauncher"  --> doFloat
     |             ^^^^
 
-xmonad.hs:311:12: warning: [-Wdeprecations]
+xmonad.hs:314:12: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
     |
-311 | defaults = defaultConfig {
+314 | defaults = defaultConfig {
     |            ^^^^^^^^^^^^^
