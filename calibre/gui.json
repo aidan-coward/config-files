@@ -1,263 +1,275 @@
 {
+  "ask_to_manage_device": [
+    "R58N32G0TMJ",
+    "G000N60792330ABT"
+  ],
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA+wAAAWgAAAEZAf////8BAAAAAQA="
+  },
   "book_details_splitter_horizontal_state": [
-    true, 
+    true,
     200
-  ], 
+  ],
   "book_list_pin_splitter_state": {
-    "__class__": "bytearray", 
+    "__class__": "bytearray",
     "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
-  }, 
+  },
   "card_a_view books view state": {
     "column_alignment": {
-      "size": "center", 
+      "size": "center",
       "timestamp": "center"
-    }, 
+    },
     "column_positions": {
-      "authors": 2, 
-      "collections": 5, 
-      "inlibrary": 0, 
-      "size": 4, 
-      "timestamp": 3, 
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
       "title": 1
-    }, 
+    },
     "column_sizes": {
-      "authors": 94, 
-      "collections": 105, 
-      "inlibrary": 95, 
-      "size": 55, 
-      "timestamp": 72, 
+      "authors": 94,
+      "collections": 105,
+      "inlibrary": 95,
+      "size": 55,
+      "timestamp": 72,
       "title": 56
-    }, 
-    "hidden_columns": [], 
-    "languages_injected": true, 
-    "last_modified_injected": true, 
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
     "sort_history": [
       [
-        "timestamp", 
+        "timestamp",
         false
       ]
     ]
-  }, 
+  },
   "card_b_view books view state": {
     "column_alignment": {
-      "size": "center", 
+      "size": "center",
       "timestamp": "center"
-    }, 
+    },
     "column_positions": {
-      "authors": 2, 
-      "collections": 5, 
-      "inlibrary": 0, 
-      "size": 4, 
-      "timestamp": 3, 
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
       "title": 1
-    }, 
+    },
     "column_sizes": {
-      "authors": 94, 
-      "collections": 105, 
-      "inlibrary": 95, 
-      "size": 55, 
-      "timestamp": 72, 
+      "authors": 94,
+      "collections": 105,
+      "inlibrary": 95,
+      "size": 55,
+      "timestamp": 72,
       "title": 56
-    }, 
-    "hidden_columns": [], 
-    "languages_injected": true, 
-    "last_modified_injected": true, 
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
     "sort_history": [
       [
-        "timestamp", 
+        "timestamp",
         false
       ]
     ]
-  }, 
+  },
   "convert_bulk_dialog_geom": {
-    "__class__": "bytearray", 
+    "__class__": "bytearray",
     "__value__": "AdnQywABAAAAAAAAAAAAIAAABAMAAALfAAAAAgAAACIAAAQBAAAC3QAAAAAAAA=="
-  }, 
+  },
   "convert_single_dialog_geom": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywADAAAAAAf2AAAAhAAAC/UAAAM/AAAH+AAAAIYAAAvzAAADPQAAAAEAAAAABQAAAAf4AAAAhgAAC/MAAAM9"
-  }, 
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAf4AAAAhgAAC/MAAAM9AAAH+gAAAIgAAAvxAAADOwAAAAEAAAAABQAAAAf6AAAAiAAAC/EAAAM7"
+  },
   "cover_browser_splitter_vertical_state": [
-    false, 
+    false,
     300
-  ], 
+  ],
   "custom_colors_for_color_dialog": [
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
-    ], 
+    ],
     [
-      255, 
-      255, 
-      255, 
+      255,
+      255,
+      255,
       255
     ]
-  ], 
+  ],
   "duplicates-question-dialog-geometry": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywADAAAAAAKlAAABPwAABMIAAAK5AAACpwAAAUEAAATAAAACtwAAAAAAAAAAB4AAAAKnAAABQQAABMAAAAK3"
-  }, 
-  "grid view visible": false, 
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAK1AAABSwAABeEAAAKrAAACtwAAAU0AAAXfAAACqQAAAAAAAAAAB4AAAAK3AAABTQAABd8AAAKp"
+  },
+  "grid view visible": false,
   "jobs view column layout3": {
-    "__class__": "bytearray", 
+    "__class__": "bytearray",
     "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAlAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAA"
-  }, 
+  },
   "jobs_dialog_geometry": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAFlAAAAUwAAA90AAAJwAAABZwAAAFUAAAPbAAACbgAAAAAAAAAABVY="
-  }, 
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAeAAAAAFQAADIMAAAQDAAAHggAAABcAAAyBAAAEAQAAAAEAAAAABQAAAAeCAAAAFwAADIEAAAQB"
+  },
   "library_usage_stats": {
-    "/home/aidan/media/books/Calibre Library": 62
-  }, 
+    "/home/aidan/media/books/Calibre Library": 123
+  },
   "memory_view books view state": {
     "column_alignment": {
-      "size": "center", 
+      "size": "center",
       "timestamp": "center"
-    }, 
+    },
     "column_positions": {
-      "authors": 2, 
-      "collections": 5, 
-      "inlibrary": 0, 
-      "size": 4, 
-      "timestamp": 3, 
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
       "title": 1
-    }, 
+    },
     "column_sizes": {
-      "authors": 264, 
-      "collections": 105, 
-      "inlibrary": 95, 
-      "size": 55, 
-      "timestamp": 99, 
+      "authors": 264,
+      "collections": 105,
+      "inlibrary": 95,
+      "size": 55,
+      "timestamp": 99,
       "title": 305
-    }, 
-    "hidden_columns": [], 
-    "languages_injected": true, 
-    "last_modified_injected": true, 
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
     "sort_history": [
       [
-        "timestamp", 
+        "timestamp",
         false
       ]
     ]
-  }, 
+  },
   "metasingle_window_geometry3": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAAAAAAAAAAAA+EAAAKhAAAAAgAAAAIAAAPfAAACnwAAAAAAAAAABVY="
-  }, 
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAeIAAAAggAADHcAAANBAAAHigAAAIQAAAx1AAADPwAAAAEAAAAABQAAAAeKAAAAhAAADHUAAAM/"
+  },
   "preferences_window_geometry": {
-    "__class__": "bytearray", 
+    "__class__": "bytearray",
     "__value__": "AdnQywABAAAAAAAAAAAAAAAAAzIAAAL/AAAAAgAAAAIAAAMwAAAC/QAAAAAAAA=="
-  }, 
+  },
+  "previous_sort_order_BooksView": {
+    "timestamp": false
+  },
   "questions_to_auto_skip": [
     "auto_convert_before_send"
-  ], 
-  "quick_start_guide_added": true, 
-  "quickview visible": false, 
+  ],
+  "quick_start_guide_added": true,
+  "quickview visible": false,
+  "recently_used_languages": [],
   "replace_scene_breaks_history": [
-    "", 
-    "<hr />", 
-    "∗ ∗ ∗", 
-    "• • •", 
-    "♦ ♦ ♦", 
-    "† †", 
-    "‡ ‡ ‡", 
-    "∞ ∞ ∞", 
+    "",
+    "<hr />",
+    "∗ ∗ ∗",
+    "• • •",
+    "♦ ♦ ♦",
+    "† †",
+    "‡ ‡ ‡",
+    "∞ ∞ ∞",
     "¤ ¤ ¤"
-  ], 
+  ],
   "scheduler_dialog_geometry": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAEZAAAAfgAABDgAAAJ9AAABGwAAAIAAAAQ2AAACewAAAAAAAAAABVY="
-  }, 
-  "search bar visible": true, 
-  "tag browser search box visible": false, 
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAhoAAAArgAAC4MAAAMBAAAIagAAALAAAAuBAAAC/wAAAAEAAAAABQAAAAhqAAAAsAAAC4EAAAL/"
+  },
+  "search bar visible": true,
+  "tag browser search box visible": false,
   "tag_browser_splitter_horizontal_state": [
-    true, 
+    true,
     200
   ]
 }

@@ -1,0 +1,10 @@
+symptoms:
+	system freezes completely, or freezes with only mouse input, or restarts randomly
+	soft lockup for about a second occasionally
+
+18-07-2020:
+in bios:
+	set A-XMP to Profile 1
+	set Power Supply Idle Current to Typical
+	set Cool & Quiet to Disabled
+	set Global P-States to disabled

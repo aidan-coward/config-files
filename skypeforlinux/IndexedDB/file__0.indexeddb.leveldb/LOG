@@ -1,0 +1,39 @@
+2021/11/19-16:09:42.205 1afee1 Reusing MANIFEST /home/aidan/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2021/11/19-16:09:42.205 1afee1 Recovering log #117
+2021/11/19-16:09:42.313 1afee1 Reusing old log /home/aidan/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000117.log 
+2021/11/20-22:01:30.771 35e968 Level-0 table #122: started
+2021/11/20-22:01:30.838 35e968 Level-0 table #122: 1399948 bytes OK
+2021/11/20-22:01:30.934 35e968 Delete type=0 #117
+2021/11/20-23:01:50.890 3acabd Compacting 1@1 + 1@2 files
+2021/11/20-23:01:51.017 3acabd Generated table #123@1: 10197 keys, 1080724 bytes
+2021/11/20-23:01:51.017 3acabd Compacted 1@1 + 1@2 files => 1080724 bytes
+2021/11/20-23:01:51.096 3acabd compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/20-23:01:51.096 3acabd Delete type=2 #119
+2021/11/20-23:01:51.096 3acabd Delete type=2 #122
+2021/11/23-13:01:51.419 3bcabc Level-0 table #125: started
+2021/11/23-13:01:52.758 3bcabc Level-0 table #125: 1333122 bytes OK
+2021/11/23-13:01:52.806 3bcabc Delete type=0 #121
+2021/11/23-14:01:48.000 faaf Compacting 1@1 + 1@2 files
+2021/11/23-14:01:48.065 faaf Generated table #126@1: 10465 keys, 1103869 bytes
+2021/11/23-14:01:48.065 faaf Compacted 1@1 + 1@2 files => 1103869 bytes
+2021/11/23-14:01:48.128 faaf compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/23-14:01:48.128 faaf Delete type=2 #125
+2021/11/23-14:01:48.128 faaf Delete type=2 #123
+2021/11/26-04:09:46.102 357fa Level-0 table #128: started
+2021/11/26-04:09:46.201 357fa Level-0 table #128: 1333119 bytes OK
+2021/11/26-04:09:46.301 357fa Delete type=0 #124
+2021/11/26-05:02:02.910 823a9 Compacting 1@1 + 1@2 files
+2021/11/26-05:02:03.046 823a9 Generated table #129@1: 10690 keys, 1119909 bytes
+2021/11/26-05:02:03.046 823a9 Compacted 1@1 + 1@2 files => 1119909 bytes
+2021/11/26-05:02:03.093 823a9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/26-05:02:03.094 823a9 Delete type=2 #126
+2021/11/26-05:02:03.094 823a9 Delete type=2 #128
+2021/11/28-11:54:58.502 24b7a3 Level-0 table #131: started
+2021/11/28-11:54:58.602 24b7a3 Level-0 table #131: 1419464 bytes OK
+2021/11/28-11:54:58.672 24b7a3 Delete type=0 #127
+2021/11/28-12:54:59.856 29e54c Compacting 1@1 + 1@2 files
+2021/11/28-12:54:59.993 29e54c Generated table #132@1: 10941 keys, 1141817 bytes
+2021/11/28-12:54:59.993 29e54c Compacted 1@1 + 1@2 files => 1141817 bytes
+2021/11/28-12:55:00.040 29e54c compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/28-12:55:00.040 29e54c Delete type=2 #131
+2021/11/28-12:55:00.040 29e54c Delete type=2 #129

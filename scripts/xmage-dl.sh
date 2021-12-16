@@ -28,18 +28,34 @@ echo $_PKGVER
 
 # replace old pkgver with new
 sed --in-place "s|pkgver=.*$|pkgver=$_PKGVER|" PKGBUILD
+sed --in-place "s|pkgver=.*$|pkgver=$_PKGVER|" PKGBUILD-jre-8u201-x86_64
 
 # assign checksum
 _CHECKSUM_NEW=$(sha256sum ./"$_FILE" | cut --delimiter=" " -f 1)
 
 # assign checksum line number
 _CHECKSUM_LINE_NUM=$(grep -n -m 1 -E '[0-9a-f]{64}' PKGBUILD | cut --fields=1 --delimiter=':')
+_CHECKSUM_LINE_NUM=$(grep -n -m 1 -E '[0-9a-f]{64}' PKGBUILD-jre-8u201-x86_64 | cut --fields=1 --delimiter=':')
 
 # assign old checksum
 _CHECKSUM_OLD=$(sed -n "$_CHECKSUM_LINE_NUM"p PKGBUILD | sed 's/sha256sums=("//' | sed 's/"//' | sed 's/ //')
+_CHECKSUM_OLD=$(sed -n "$_CHECKSUM_LINE_NUM"p PKGBUILD-jre-8u201-x86_64 | sed 's/sha256sums=("//' | sed 's/"//' | sed 's/ //')
 
 # replace old checksum with new checksum
 sed --in-place "s|$_CHECKSUM_OLD|$_CHECKSUM_NEW|" PKGBUILD 
+sed --in-place "s|$_CHECKSUM_OLD|$_CHECKSUM_NEW|" PKGBUILD-jre-8u201-x86_64
+
+# set pkgrel to 0
+sed --in-place "s|pkgrel=.*$|pkgrel=0|" PKGBUILD
+sed --in-place "s|pkgrel=.*$|pkgrel=0|" PKGBUILD-jre-8u201-x86_64
+
 
 # build package 
 makepkg -sif
+
+# copy PKGBUILD to aur dir
+# copy PKGBUILD-jre-8u201-x86_64 to aur dir
+cp PKGBUILD /home/aidan/aur/xmage/
+cp PKGBUILD-jre-8u201-x86_64 /home/aidan/aur/xmage/
+
+cd ~/aur/xmage

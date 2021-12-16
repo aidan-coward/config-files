@@ -1,0 +1,2 @@
+load-module module-native-protocol-unix
+load-module module-pipe-sink sink_name=chrome_remote_desktop_session file="/home/aidan/.config/chrome-remote-desktop/pulseaudio#f5eb3f4e3f/fifo_output" rate=48000 channels=2 format=s16le

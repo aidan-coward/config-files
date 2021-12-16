@@ -38,20 +38,21 @@ c.url.searchengines = {
         "DEFAULT": "https://www.google.ca/search?q={}",
         "aw": "https://wiki.archlinux.org/?search={}",
         "tpb": "https://thepiratebay.rocks/search/{}",
-        "ew": "https://en.wikipedia.org/wiki/index.php?search={}",
+        "ew": "https://en.wikipedia.org/w/index.php?search={}",
         "tube": "https://www.youtube.com/results?search_query={}",
         "tu": "https://invidio.us/search?q={}",
         "maps": "https://www.google.com/maps/search/{}",
         "a": "https://www.archlinux.org/packages/?q={}",
         "aur": "https://aur.archlinux.org/packages.php?K={}",
         "fr": "https://fr.wiktionary.org/wiki/{}",
-        "fc": "https://fr.wiktionary.org/wiki/Annexe:Conjugaison_en_fran%C3%A7ais/{}",
+        "fc": "https://fr.wiktionary.org/wiki/Conjugaison:fran%C3%A7ais/{}",
         "g": "https://github.com/search?q={}",
         "cr": "https://crates.io/search?q={}",
         "mw": "https://mtg.gamepedia.com/index.php?search={}",
         "mc": "http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[{}]",
         "td": "https://www.torrentday.com/t?q={}&qf=#torrents",
-        "ft": "https://facetofacegames.crystalcommerce.com/products/search?query={}",
+        "ft": "https://www.facetofacegames.com/search.php?search_query={}",
+        "tf": "https://www.facetofacegames.com/search.php?search_query={}",
         "gk": "http://www.gamekeeperonline.com/products/search?q={}",
         "ab": "http://www.labyss.ca/products/search?q={}",
         "urban": "https://www.urbandictionary.com/define.php?term={}",
@@ -61,7 +62,7 @@ c.url.searchengines = {
         "deb": "https://packages.debian.org/search?searchon=sourcenames&keywords={}",
         "bulba": "https://bulbapedia.bulbagarden.net/wiki/{}",
         "r": "https://doc.rust-lang.org/std/index.html?search={}",
-        "fsyn": "http://www.synonymes.com/synonyme.php?mot={}&x=0&y=0",
+        "fsyn": "https://www.synonymes.com/synonyme.php?mot={}",
         "t": "https://terraria.gamepedia.com/index.php?search={}&title=Special%3ASearch&go=Go",
         "th": "https://www.thesaurus.com/browse/{}",
         "way": "http://web.archive.org/web/*/{}",
@@ -73,6 +74,8 @@ c.url.searchengines = {
         "dc": "https://deadcells.gamepedia.com/index.php?search={}&title=Special%3ASearch&go=Go",
         "h": "https://hypem.com/search/{}/1/",
         "ftw": "https://ftl.fandom.com/wiki/Special:Search?query={}",
+        "us": "https://usito.usherbrooke.ca/définitions/{}",
+        "pw": "https://12ft.io/{}",
 
         }
 
@@ -88,7 +91,8 @@ c.aliases = {
 
 c.fonts.web.size.default = 16
 
-c.fonts.tabs = "13pt Source Code Pro"
+c.fonts.tabs.selected = "13pt Source Code Pro"
+c.fonts.tabs.unselected = "13pt Source Code Pro"
 
 c.fonts.statusbar = "13pt Source Code Pro"
 
@@ -102,4 +106,7 @@ c.tabs.background = True
 
 # ad blocker whitelist
 #c.content.host_blocking.whitelist = ['host1.com', 'host2.com'] 
-c.content.host_blocking.whitelist = ['canadiantire.ca'] 
+c.content.blocking.whitelist = ['canadiantire.ca'] 
+
+# required autoconfig
+config.load_autoconfig(False)

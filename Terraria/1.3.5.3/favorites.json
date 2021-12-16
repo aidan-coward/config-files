@@ -1,0 +1,12 @@
+{
+  "World": {
+    "world_1.wld": true,
+    "expert_1.wld": false,
+    "small_world.wld": false,
+    "small_hardmode_corr.wld": false,
+    "angler_fish_farm.wld": false
+  },
+  "Player": {
+    "aidonius.plr": false
+  }
+}

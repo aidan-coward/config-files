@@ -1,0 +1,1 @@
+added 'start /usr/bin/startlxde' to ~/.chrome-remote-desktop

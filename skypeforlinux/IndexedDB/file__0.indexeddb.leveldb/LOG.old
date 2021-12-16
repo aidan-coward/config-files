@@ -1,0 +1,30 @@
+2021/10/29-15:48:26.348 15961b Reusing MANIFEST /home/aidan/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2021/10/29-15:48:26.348 15961b Recovering log #107
+2021/10/29-15:48:26.348 15961b Reusing old log /home/aidan/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000107.log 
+2021/10/31-20:44:23.842 27bb4f Level-0 table #112: started
+2021/10/31-20:44:23.903 27bb4f Level-0 table #112: 1420810 bytes OK
+2021/10/31-20:44:23.965 27bb4f Delete type=0 #107
+2021/10/31-21:44:23.584 2ce7ed Compacting 1@1 + 1@2 files
+2021/10/31-21:44:23.650 2ce7ed Generated table #113@1: 9495 keys, 1020543 bytes
+2021/10/31-21:44:23.650 2ce7ed Compacted 1@1 + 1@2 files => 1020543 bytes
+2021/10/31-21:44:23.696 2ce7ed compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/10/31-21:44:23.696 2ce7ed Delete type=2 #112
+2021/10/31-21:44:23.696 2ce7ed Delete type=2 #109
+2021/11/03-14:05:59.885 3a2d88 Level-0 table #115: started
+2021/11/03-14:05:59.968 3a2d88 Level-0 table #115: 1342125 bytes OK
+2021/11/03-14:06:00.015 3a2d88 Delete type=0 #111
+2021/11/03-14:57:59.906 3ea9df Compacting 1@1 + 1@2 files
+2021/11/03-14:57:59.988 3ea9df Generated table #116@1: 9719 keys, 1037209 bytes
+2021/11/03-14:57:59.988 3ea9df Compacted 1@1 + 1@2 files => 1037209 bytes
+2021/11/03-14:58:00.035 3ea9df compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/03-14:58:00.035 3ea9df Delete type=2 #113
+2021/11/03-14:58:00.035 3ea9df Delete type=2 #115
+2021/11/05-18:36:32.193 a6c7e Level-0 table #118: started
+2021/11/05-18:36:32.298 a6c7e Level-0 table #118: 1439650 bytes OK
+2021/11/05-18:36:32.409 a6c7e Delete type=0 #114
+2021/11/05-19:36:32.424 f0d7f Compacting 1@1 + 1@2 files
+2021/11/05-19:36:32.567 f0d7f Generated table #119@1: 9942 keys, 1057401 bytes
+2021/11/05-19:36:32.567 f0d7f Compacted 1@1 + 1@2 files => 1057401 bytes
+2021/11/05-19:36:32.613 f0d7f compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/05-19:36:32.613 f0d7f Delete type=2 #116
+2021/11/05-19:36:32.613 f0d7f Delete type=2 #118
